@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-11T05:48:34Z",
+    "updated": "2026-09-11T05:49:38Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -471,6 +471,40 @@
         "channel": "官方網站",
         "name": "NASA Space Place",
         "url": "https://spaceplace.nasa.gov"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-11-003",
+      "date": "2026-09-11",
+      "category": "語文",
+      "title": "Google Read Along",
+      "summary": "孩子把故事念給閱讀夥伴 Diya 聽，即時鼓勵與協助、不打斷；可下載離線，適合英語朗讀練習。首次需開麥克風，建議家長陪同選故事與練習時間。",
+      "basic_info": {
+        "年齡": "開始學英語朗讀即可（家長陪同更佳）",
+        "語言": "英語為主（及其他支援語言）",
+        "費用": "免費",
+        "學科": "英語朗讀、閱讀",
+        "平台": "網站／Android"
+      },
+      "tags": [
+        "英語朗讀",
+        "朗讀練習",
+        "閱讀夥伴",
+        "Diya",
+        "即時回饋",
+        "離線閱讀",
+        "Google",
+        "AI陪伴",
+        "麥克風",
+        "家長陪同",
+        "免費",
+        "英文"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Google Read Along",
+        "url": "https://readalong.google.com/"
       },
       "status": "recommended"
     }
