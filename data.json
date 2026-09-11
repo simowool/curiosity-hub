@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-11T09:35:24Z",
+    "updated": "2026-09-11T15:15:20Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -80,31 +80,6 @@
         "channel": "官方網站",
         "name": "均一教育平台",
         "url": "https://www.junyiacademy.org/"
-      },
-      "status": "recommended"
-    },
-    {
-      "id": "2026-09-10-004",
-      "date": "2026-09-10",
-      "category": "百科",
-      "title": "因材網",
-      "summary": "教育部適性學習平台，國英數自社等科目。",
-      "basic_info": {
-        "年齡": "國小至高中",
-        "語言": "繁體中文",
-        "費用": "免費",
-        "學科": "主要科目",
-        "平台": "網站"
-      },
-      "tags": [
-        "台灣",
-        "教育部",
-        "自主學習"
-      ],
-      "source": {
-        "channel": "官方網站",
-        "name": "因材網",
-        "url": "https://adl.edu.tw"
       },
       "status": "recommended"
     },
@@ -313,31 +288,6 @@
       "status": "recommended"
     },
     {
-      "id": "2026-09-10-013",
-      "date": "2026-09-10",
-      "category": "語文",
-      "title": "萌典",
-      "summary": "開源國語辭典，查字義、注音與例句。",
-      "basic_info": {
-        "年齡": "識字後",
-        "語言": "繁體中文",
-        "費用": "免費",
-        "學科": "國語",
-        "平台": "網站"
-      },
-      "tags": [
-        "字典",
-        "繁體中文",
-        "語文"
-      ],
-      "source": {
-        "channel": "官方網站",
-        "name": "萌典",
-        "url": "https://www.moedict.tw"
-      },
-      "status": "recommended"
-    },
-    {
       "id": "2026-09-10-014",
       "date": "2026-09-10",
       "category": "語文",
@@ -359,31 +309,6 @@
         "channel": "官方網站",
         "name": "筆順學習網",
         "url": "https://stroke-order.learningweb.moe.edu.tw"
-      },
-      "status": "recommended"
-    },
-    {
-      "id": "2026-09-10-015",
-      "date": "2026-09-10",
-      "category": "語文",
-      "title": "國語日報親子網",
-      "summary": "標注音的兒童閱讀與寫作資源。",
-      "basic_info": {
-        "年齡": "國小",
-        "語言": "繁體中文",
-        "費用": "部分免費",
-        "學科": "閱讀、寫作",
-        "平台": "網站"
-      },
-      "tags": [
-        "閱讀",
-        "注音",
-        "台灣"
-      ],
-      "source": {
-        "channel": "官方網站",
-        "name": "國語日報",
-        "url": "https://www.mdnkids.com"
       },
       "status": "recommended"
     },
