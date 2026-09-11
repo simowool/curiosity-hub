@@ -1,29 +1,50 @@
 let DATA = { meta: {}, entries: [] };
-const CATS = ["全部", "科學", "數學", "語文", "社會", "藝術", "程式", "百科", "其他"];
-let cat = "全部";
+let activeTag = "全部";
 
 const chips = document.getElementById("chips");
-CATS.forEach((name) => {
-  const b = document.createElement("button");
-  b.className = "chip" + (name === cat ? " active" : "");
-  b.textContent = name;
-  b.onclick = () => { cat = name; render(); };
-  chips.appendChild(b);
-});
-
 document.getElementById("q").addEventListener("input", render);
 
-function render() {
-  [...chips.children].forEach((el) => {
-    el.classList.toggle("active", el.textContent === cat);
+function uniqueTags(entries) {
+  const counts = new Map();
+  (entries || []).forEach((e) => {
+    (e.tags || []).forEach((t) => {
+      const name = String(t || "").trim();
+      if (!name) return;
+      counts.set(name, (counts.get(name) || 0) + 1);
+    });
   });
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-Hant"))
+    .map(([name]) => name);
+}
+
+function buildChips() {
+  const names = ["全部"].concat(uniqueTags(DATA.entries));
+  if (!names.includes(activeTag)) activeTag = "全部";
+  chips.innerHTML = "";
+  names.forEach((name) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip" + (name === activeTag ? " active" : "");
+    b.textContent = name;
+    b.onclick = () => {
+      activeTag = name;
+      render();
+    };
+    chips.appendChild(b);
+  });
+}
+
+function render() {
+  buildChips();
   const q = document.getElementById("q").value.trim().toLowerCase();
   const items = (DATA.entries || []).filter((e) => {
-    const okCat = cat === "全部" || e.category === cat;
-    if (!okCat) return false;
+    const tags = e.tags || [];
+    const okTag = activeTag === "全部" || tags.indexOf(activeTag) !== -1;
+    if (!okTag) return false;
     if (!q) return true;
     const info = e.basic_info ? Object.values(e.basic_info).join(" ") : "";
-    const blob = [e.title, e.summary, e.notes, info, (e.tags || []).join(" "), e.source && e.source.name, e.source && e.source.url]
+    const blob = [e.title, e.summary, e.notes, info, tags.join(" "), e.source && e.source.name, e.source && e.source.url]
       .filter(Boolean).join(" ").toLowerCase();
     return blob.includes(q);
   }).sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(b.id).localeCompare(String(a.id)));
@@ -33,14 +54,14 @@ function render() {
   const list = document.getElementById("list");
   list.innerHTML = "";
   if (!items.length) {
-    list.innerHTML = '<div class="empty"><h2>還沒有符合的網站</h2><p>把想收的自學網站丟到 Grok，或改一下搜尋與分類。</p></div>';
+    list.innerHTML = '<div class="empty"><h2>還沒有符合的網站</h2><p>把想收的自學網站丟到 Grok，或改一下搜尋與標籤。</p></div>';
     return;
   }
   items.forEach((e) => {
     const facts = e.basic_info
       ? Object.entries(e.basic_info).map(([k, v]) => "<div><b>" + esc(k) + "</b><span>" + esc(String(v)) + "</span></div>").join("")
       : "";
-    const tags = (e.tags || []).map((t) => '<span class="tag">' + esc(t) + "</span>").join("");
+    const tagHtml = (e.tags || []).map((t) => '<span class="tag">' + esc(t) + "</span>").join("");
     let src = "";
     if (e.source) {
       src = '<div class="source">' + esc(e.source.channel || "來源");
@@ -56,7 +77,7 @@ function render() {
       "</span></div>" +
       (e.summary ? '<p class="summary">' + esc(e.summary) + "</p>" : "") +
       (facts ? '<div class="facts">' + facts + "</div>" : "") +
-      (tags ? '<div class="tags">' + tags + "</div>" : "") +
+      (tagHtml ? '<div class="tags">' + tagHtml + "</div>" : "") +
       src;
     list.appendChild(el);
   });
@@ -70,4 +91,7 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-fetch("data.json?v=20260911c").then(function (r) { return r.json(); }).then(function (d) { DATA = d; render(); }).catch(function () { render(); });
+fetch("data.json?v=20260911d")
+  .then(function (r) { return r.json(); })
+  .then(function (d) { DATA = d; render(); })
+  .catch(function () { render(); });
