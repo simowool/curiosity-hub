@@ -1,0 +1,103 @@
+:root {
+  --bg: #0f172a;
+  --paper: #1e293b;
+  --ink: #e2e8f0;
+  --muted: #94a3b8;
+  --line: #334155;
+  --accent: #22d3ee;
+  --accent-soft: #164e63;
+  --科學: #67e8f9;
+  --數學: #93c5fd;
+  --語文: #7dd3fc;
+  --社會: #c4b5fd;
+  --藝術: #5eead4;
+  --程式: #a5b4fc;
+  --百科: #6ee7b7;
+  --其他: #94a3b8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { color-scheme: dark; }
+body {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti TC", "Noto Serif TC", "PMingLiU", serif;
+  background: radial-gradient(1200px 600px at 10% -10%, #1e3a4c 0%, transparent 55%), var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+}
+.wrap { max-width: 1180px; margin: 0 auto; padding: 40px 20px 80px; }
+header { margin-bottom: 28px; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.brand { min-width: 0; }
+.social {
+  font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
+  font-size: 13px; color: var(--accent); text-decoration: none;
+  border: 1px solid var(--line); background: var(--paper);
+  border-radius: 999px; padding: 7px 12px; white-space: nowrap; margin-top: 6px;
+}
+.social:hover { border-color: var(--accent); }
+.kicker {
+  letter-spacing: 0.22em; text-transform: uppercase; font-size: 12px; color: var(--accent);
+  font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif; margin-bottom: 8px;
+}
+h1 { font-size: 42px; font-weight: 600; margin: 0 0 8px; letter-spacing: 0.06em; }
+.subtitle { color: var(--muted); font-size: 16px; line-height: 1.6; margin: 0; }
+.toolbar {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 28px 0 18px;
+  font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
+}
+.search {
+  flex: 1 1 240px; border: 1px solid var(--line); background: var(--paper);
+  border-radius: 999px; padding: 10px 16px; font-size: 14px; color: var(--ink); outline: none;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  border: 1px solid var(--line); background: var(--paper); color: var(--muted);
+  border-radius: 999px; padding: 7px 12px; font-size: 13px; cursor: pointer;
+}
+.chip.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.stats { color: var(--muted); font-size: 13px; margin-left: auto; }
+.list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 900px) { .list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .list { grid-template-columns: 1fr; } }
+.card {
+  background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+  padding: 16px; box-shadow: 0 1px 0 rgba(0,0,0,0.18); min-width: 0;
+}
+.card-top { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.badge {
+  font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
+  font-size: 12px; padding: 3px 8px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent);
+}
+.badge.科學 { background: #164e63; color: var(--科學); }
+.badge.數學 { background: #1e3a5f; color: var(--數學); }
+.badge.語文 { background: #163a4d; color: var(--語文); }
+.badge.社會 { background: #2e2654; color: var(--社會); }
+.badge.藝術 { background: #134e4a; color: var(--藝術); }
+.badge.程式 { background: #1e2a54; color: var(--程式); }
+.badge.百科 { background: #14532d; color: var(--百科); }
+.badge.其他 { background: #334155; color: var(--其他); }
+.title { font-size: 18px; margin: 0; flex: 1 1 100%; }
+.date { color: var(--muted); font-size: 13px; font-family: "Avenir Next", "PingFang TC", sans-serif; }
+.summary { margin: 10px 0 0; line-height: 1.65; font-size: 14.5px; }
+.facts {
+  margin-top: 12px; display: grid; gap: 6px;
+  font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
+  font-size: 13.5px; color: var(--ink);
+}
+.facts div { display: grid; grid-template-columns: 48px 1fr; gap: 8px; }
+.facts b { color: var(--muted); font-weight: 500; }
+.tags { margin-top: 12px; display: flex; gap: 6px; flex-wrap: wrap; }
+.tag {
+  font-size: 12px; color: var(--muted); border: 1px solid var(--line);
+  border-radius: 999px; padding: 3px 8px; font-family: "Avenir Next", "PingFang TC", sans-serif;
+}
+.source { margin-top: 12px; font-size: 13px; color: var(--muted); }
+.source a { color: var(--accent); text-decoration: none; }
+.empty {
+  grid-column: 1 / -1; background: var(--paper); border: 1px dashed var(--line);
+  border-radius: 16px; padding: 36px 24px; text-align: center;
+}
+.empty h2 { margin: 0 0 8px; font-size: 22px; }
+.empty p { color: var(--muted); line-height: 1.7; margin: 0 auto; max-width: 36em; }
+footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
+footer a { color: var(--accent); text-decoration: none; }
