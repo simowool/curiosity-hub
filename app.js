@@ -64,10 +64,10 @@ function render() {
 
 function esc(s) {
   return String(s)
-    .replace(/&/g, "&")
-    .replace(/</g, "<")
-    .replace(/>/g, ">")
-    .replace(/"/g, """);
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 fetch("data.json").then(function (r) { return r.json(); }).then(function (d) { DATA = d; render(); }).catch(function () { render(); });
