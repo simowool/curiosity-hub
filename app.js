@@ -70,4 +70,4 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-fetch("data.json?v=20260911b").then(function (r) { return r.json(); }).then(function (d) { DATA = d; render(); }).catch(function () { render(); });
+fetch("data.json?v=20260911c").then(function (r) { return r.json(); }).then(function (d) { DATA = d; render(); }).catch(function () { render(); });
