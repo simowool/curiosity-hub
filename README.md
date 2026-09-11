@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.iperform.com/?utm_source=curiosityhub" target="_blank" rel="noopener">
-    <img src="assets/iperform-canada-local-consulting-banner-text-728x90.png" alt="iPerform 加拿大當地留學諮詢公司" width="728" height="90" />
+    <img src="https://www.iperform.com/assets/iperform-canada-local-consulting-banner-text-728x90.png" alt="iPerform 加拿大當地留學諮詢公司" width="728" height="90" />
   </a>
 </p>
 
