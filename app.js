@@ -33,26 +33,41 @@ function render() {
   const list = document.getElementById("list");
   list.innerHTML = "";
   if (!items.length) {
-    list.innerHTML = `<div class="empty"><h2>還沒有符合的網站</h2><p>把想收的自學網站丟到 Grok，或改一下搜尋與分類。</p></div>`;
+    list.innerHTML = '<div class="empty"><h2>還沒有符合的網站</h2><p>把想收的自學網站丟到 Grok，或改一下搜尋與分類。</p></div>';
     return;
   }
   items.forEach((e) => {
     const facts = e.basic_info
-      ? Object.entries(e.basic_info).map(([k, v]) => `<div><b>${esc(k)}</b><span>${esc(String(v))}</span></div>`).join("")
+      ? Object.entries(e.basic_info).map(([k, v]) => "<div><b>" + esc(k) + "</b><span>" + esc(String(v)) + "</span></div>").join("")
       : "";
-    const tags = (e.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("");
-    const src = e.source
-      ? `<div class="source">${esc(e.source.channel || "來源")}${e.source.name ? " · " + esc(e.source.name) : ""}${e.source.url ? ` · <a href="${esc(e.source.url)}" target="_blank" rel="noopener">開啟</a>` : ""}</div>`
-      : "";
+    const tags = (e.tags || []).map((t) => '<span class="tag">' + esc(t) + "</span>").join("");
+    let src = "";
+    if (e.source) {
+      src = '<div class="source">' + esc(e.source.channel || "來源");
+      if (e.source.name) src += " · " + esc(e.source.name);
+      if (e.source.url) src += ' · <a href="' + esc(e.source.url) + '" target="_blank" rel="noopener">開啟</a>';
+      src += "</div>";
+    }
     const el = document.createElement("article");
     el.className = "card";
-    el.innerHTML = `<div class="card-top"><span class="badge ${esc(e.category || "其他")}">${esc(e.category || "其他")}</span><h2 class="title">${esc(e.title || "未命名")}</h2><span class="date">${esc(e.date || "")}</span></div>${e.summary ? `<p class="summary">${esc(e.summary)}</p>` : ""}${facts ? `<div class="facts">${facts}</div>` : ""}${tags ? `<div class="tags">${tags}</div>` : ""}${src}`;
+    el.innerHTML =
+      '<div class="card-top"><span class="badge ' + esc(e.category || "其他") + '">' + esc(e.category || "其他") +
+      '</span><h2 class="title">' + esc(e.title || "未命名") + '</h2><span class="date">' + esc(e.date || "") +
+      "</span></div>" +
+      (e.summary ? '<p class="summary">' + esc(e.summary) + "</p>" : "") +
+      (facts ? '<div class="facts">' + facts + "</div>" : "") +
+      (tags ? '<div class="tags">' + tags + "</div>" : "") +
+      src;
     list.appendChild(el);
   });
 }
 
 function esc(s) {
-  return String(s).replace(/[&<>"']/g, (c) => ({"&":"&","<":"<",">":">","\"":""","'":"&#39;"}[c]));
+  return String(s)
+    .replace(/&/g, "&")
+    .replace(/</g, "<")
+    .replace(/>/g, ">")
+    .replace(/"/g, """);
 }
 
-fetch("data.json").then((r) => r.json()).then((d) => { DATA = d; render(); }).catch(() => render());
+fetch("data.json").then(function (r) { return r.json(); }).then(function (d) { DATA = d; render(); }).catch(function () { render(); });
