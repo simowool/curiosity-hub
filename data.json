@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-11T05:38:31Z",
+    "updated": "2026-09-11T05:48:34Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -435,6 +435,42 @@
         "channel": "官方網站",
         "name": "NCLibTV 國圖到你家",
         "url": "https://nclibtv.ncl.edu.tw/web/learning.php?id=1003&lang=zh-Hant"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-11-002",
+      "date": "2026-09-11",
+      "category": "科學",
+      "title": "NASA Space Place",
+      "summary": "NASA 免費太空科普遊戲寶庫：可愛插畫與小遊戲認識黑洞、太陽系與地球氣候，還有手作太空船 DIY；零門檻、零廣告，英文站可用瀏覽器翻譯。",
+      "basic_info": {
+        "年齡": "約5–12歲（童心大人也好玩）",
+        "語言": "英文（可瀏覽器翻譯成中文）",
+        "費用": "免費、零廣告",
+        "學科": "天文、地球科學、太空科技",
+        "平台": "網站"
+      },
+      "tags": [
+        "太空",
+        "NASA",
+        "天文科普",
+        "太空遊戲",
+        "互動小遊戲",
+        "手作DIY",
+        "太陽系",
+        "黑洞",
+        "地球氣候",
+        "海洋",
+        "週末放電",
+        "免費",
+        "零廣告",
+        "英文"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "NASA Space Place",
+        "url": "https://spaceplace.nasa.gov"
       },
       "status": "recommended"
     }
