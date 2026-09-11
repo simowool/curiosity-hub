@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-11T07:28:26Z",
+    "updated": "2026-09-11T07:55:23Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -171,22 +171,33 @@
       "date": "2026-09-10",
       "category": "程式",
       "title": "ScratchJr",
-      "summary": "給更小孩子的 Scratch，適合還不會打字的低年級。",
+      "summary": "MIT＋塔夫茨為低齡打造的圖形積木程式：不識字也能拼動畫與故事；可錄音自拍繪圖，免費無廣告，銜接標準版 Scratch 的跳板。",
       "basic_info": {
-        "年齡": "約5–7 歲",
-        "語言": "有中文",
-        "費用": "免費",
-        "學科": "程式啟蒙",
-        "平台": "平板"
+        "年齡": "約5–7歲（學前～國小低年級）",
+        "語言": "圖形介面為主（不依賴文字）",
+        "費用": "免費、零廣告、無內購",
+        "學科": "運算思維、創意表達、動畫與故事",
+        "平台": "iOS／Android／Chromebook"
       },
       "tags": [
+        "ScratchJr",
+        "兒童程式",
+        "運算思維",
+        "MIT學習工具",
+        "STEM教育",
+        "免費學習資源",
+        "圖形積木",
         "低年級",
-        "App"
+        "互動故事",
+        "有聲繪本",
+        "銜接Scratch",
+        "App",
+        "免費"
       ],
       "source": {
         "channel": "官方網站",
         "name": "ScratchJr",
-        "url": "https://www.scratchjr.org"
+        "url": "https://www.scratchjr.org/"
       },
       "status": "recommended"
     },
