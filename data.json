@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-11T08:15:37Z",
+    "updated": "2026-09-11T09:35:24Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -163,23 +163,25 @@
       "id": "2026-09-10-007",
       "date": "2026-09-10",
       "category": "程式",
-      "title": "Code.org",
-      "summary": "一小時學程式關卡，可切換繁體中文。",
+      "title": "Code.org｜Hour of Code",
+      "summary": "一小時程式設計：拖曳積木像玩遊戲就學會寫程式，挫折感低、完成有電子證書；有繁中，適合帶小孩週末入門或自己體驗。",
       "basic_info": {
-        "年齡": "約4 歲以上",
+        "年齡": "約4歲以上（親子共玩也好）",
         "語言": "可切繁體中文",
         "費用": "免費",
-        "學科": "程式",
+        "學科": "程式入門、運算思維",
         "平台": "網站"
       },
       "tags": [
         "程式",
-        "Hour of Code"
+        "運算思維",
+        "積木程式",
+        "親子共學"
       ],
       "source": {
         "channel": "官方網站",
-        "name": "Code.org",
-        "url": "https://code.org"
+        "name": "Code.org Hour of Code",
+        "url": "https://code.org/zh-Hant/hour-of-code"
       },
       "status": "recommended"
     },
