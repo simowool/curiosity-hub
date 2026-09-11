@@ -90,7 +90,9 @@ h1 { font-size: 42px; font-weight: 600; margin: 0 0 8px; letter-spacing: 0.06em;
 .tag {
   font-size: 12px; color: var(--muted); border: 1px solid var(--line);
   border-radius: 999px; padding: 3px 8px; font-family: "Avenir Next", "PingFang TC", sans-serif;
+  background: transparent; cursor: pointer;
 }
+.tag:hover { color: var(--accent); border-color: var(--accent); }
 .source { margin-top: 12px; font-size: 13px; color: var(--muted); }
 .source a { color: var(--accent); text-decoration: none; }
 .empty {
