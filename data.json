@@ -2,25 +2,416 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-11T03:42:00Z",
+    "updated": "2026-09-11T04:37:49Z",
     "locale": "zh-Hant"
   },
   "entries": [
-    {"id":"2026-09-10-001","date":"2026-09-10","category":"數學","title":"Khan Academy 可汗學院","summary":"非營利線上教室，用短影片與練習題帶孩子學數學、科學與人文。","basic_info":{"年齡":"約6歲以上","語言":"英文為主","費用":"免費","學科":"數學、科學","平台":"網站／App"},"tags":["免費","課程"],"source":{"channel":"官方網站","name":"Khan Academy","url":"https://www.khanacademy.org"},"status":"recommended"},
-    {"id":"2026-09-10-002","date":"2026-09-10","category":"語文","title":"Khan Academy Kids","summary":"學齡前到低年級免費 App：拼音、早期閱讀與簡單數學。","basic_info":{"年齡":"約2–8 歲","語言":"英文","費用":"免費","學科":"早期語文、數學","平台":"iOS／Android"},"tags":["學齡前","App"],"source":{"channel":"官方網站","name":"Khan Academy Kids","url":"https://www.khanacademy.org/kids"},"status":"recommended"},
-    {"id":"2026-09-10-003","date":"2026-09-10","category":"數學","title":"均一教育平台","summary":"台灣非營利平台，對應 108 課綱，影片加習題。","basic_info":{"年齡":"國小至高中","語言":"繁體中文","費用":"免費","學科":"數學、自然","平台":"網站"},"tags":["台灣","108課綱"],"source":{"channel":"官方網站","name":"均一教育平台","url":"https://www.junyiacademy.org"},"status":"recommended"},
-    {"id":"2026-09-10-004","date":"2026-09-10","category":"百科","title":"因材網","summary":"教育部適性學習平台，國英數自社等科目。","basic_info":{"年齡":"國小至高中","語言":"繁體中文","費用":"免費","學科":"主要科目","平台":"網站"},"tags":["教育部","台灣"],"source":{"channel":"官方網站","name":"因材網","url":"https://adl.edu.tw"},"status":"recommended"},
-    {"id":"2026-09-10-005","date":"2026-09-10","category":"程式","title":"Scratch","summary":"MIT 積木程式平台，孩子可做動畫、遊戲與故事。","basic_info":{"年齡":"約8–16 歲","語言":"有繁體中文","費用":"免費","學科":"程式","平台":"網站"},"tags":["MIT","積木程式"],"source":{"channel":"官方網站","name":"Scratch","url":"https://scratch.mit.edu"},"status":"recommended"},
-    {"id":"2026-09-10-006","date":"2026-09-10","category":"程式","title":"ScratchJr","summary":"給更小孩子的 Scratch，適合還不會打字的低年級。","basic_info":{"年齡":"約5–7 歲","語言":"有中文","費用":"免費","學科":"程式啟蒙","平台":"平板"},"tags":["低年級","App"],"source":{"channel":"官方網站","name":"ScratchJr","url":"https://www.scratchjr.org"},"status":"recommended"},
-    {"id":"2026-09-10-007","date":"2026-09-10","category":"程式","title":"Code.org","summary":"一小時學程式關卡，可切換繁體中文。","basic_info":{"年齡":"約4 歲以上","語言":"可切繁體中文","費用":"免費","學科":"程式","平台":"網站"},"tags":["Hour of Code"],"source":{"channel":"官方網站","name":"Code.org","url":"https://code.org"},"status":"recommended"},
-    {"id":"2026-09-10-008","date":"2026-09-10","category":"科學","title":"NASA Kids' Club","summary":"航太總署給孩子的太空遊戲與影片。","basic_info":{"年齡":"約5–12 歲","語言":"英文","費用":"免費","學科":"太空","平台":"網站"},"tags":["太空","NASA"],"source":{"channel":"官方網站","name":"NASA Kids' Club","url":"https://www.nasa.gov/learning-resources/nasa-kids-club/"},"status":"recommended"},
-    {"id":"2026-09-10-009","date":"2026-09-10","category":"科學","title":"National Geographic Kids","summary":"國家地理兒童版：動物、地理與科學短文。","basic_info":{"年齡":"約6–14 歲","語言":"英文","費用":"多數免費","學科":"動物、地理","平台":"網站"},"tags":["動物","地理"],"source":{"channel":"官方網站","name":"National Geographic Kids","url":"https://kids.nationalgeographic.com"},"status":"recommended"},
-    {"id":"2026-09-10-010","date":"2026-09-10","category":"科學","title":"PhET 互動模擬","summary":"免費模擬實驗，有繁體中文。","basic_info":{"年齡":"約10 歲以上","語言":"有繁體中文","費用":"免費","學科":"物化生數","平台":"網站"},"tags":["實驗","模擬"],"source":{"channel":"官方網站","name":"PhET","url":"https://phet.colorado.edu/zh_TW/"},"status":"recommended"},
-    {"id":"2026-09-10-011","date":"2026-09-10","category":"百科","title":"BBC Bitesize","summary":"BBC 中小學修習站，短影片與測驗。","basic_info":{"年齡":"約3–16 歲","語言":"英文","費用":"免費","學科":"各科","平台":"網站"},"tags":["BBC","影片"],"source":{"channel":"官方網站","name":"BBC Bitesize","url":"https://www.bbc.co.uk/bitesize"},"status":"recommended"},
-    {"id":"2026-09-10-012","date":"2026-09-10","category":"其他","title":"PBS Kids","summary":"美國公共電視兒童站，遊戲與影片。","basic_info":{"年齡":"約2–8 歲","語言":"英文","費用":"免費","學科":"早期學習","平台":"網站／App"},"tags":["學齡前"],"source":{"channel":"官方網站","name":"PBS Kids","url":"https://pbskids.org"},"status":"recommended"},
-    {"id":"2026-09-10-013","date":"2026-09-10","category":"語文","title":"萌典","summary":"開源國語辭典，查字義、注音與例句。","basic_info":{"年齡":"識字後","語言":"繁體中文","費用":"免費","學科":"國語","平台":"網站"},"tags":["字典","注音"],"source":{"channel":"官方網站","name":"萌典","url":"https://www.moedict.tw"},"status":"recommended"},
-    {"id":"2026-09-10-014","date":"2026-09-10","category":"語文","title":"國字標準字體筆順學習網","summary":"教育部標準楷體筆順動畫。","basic_info":{"年齡":"開始寫字即可","語言":"繁體中文","費用":"免費","學科":"國字","平台":"網站"},"tags":["筆順","教育部"],"source":{"channel":"官方網站","name":"筆順學習網","url":"https://stroke-order.learningweb.moe.edu.tw"},"status":"recommended"},
-    {"id":"2026-09-10-015","date":"2026-09-10","category":"語文","title":"國語日報親子網","summary":"標注音的兒童閱讀與寫作資源。","basic_info":{"年齡":"國小","語言":"繁體中文","費用":"部分免費","學科":"閱讀、寫作","平台":"網站"},"tags":["注音","閱讀"],"source":{"channel":"官方網站","name":"國語日報","url":"https://www.mdnkids.com"},"status":"recommended"},
-    {"id":"2026-09-10-016","date":"2026-09-10","category":"百科","title":"TED-Ed","summary":"短動畫把一個問題講清楚，適合國小高年級與國中。","basic_info":{"年齡":"約10 歲以上","語言":"英文有字幕","費用":"免費","學科":"跨領域","平台":"網站／YouTube"},"tags":["動畫","短片"],"source":{"channel":"官方網站","name":"TED-Ed","url":"https://ed.ted.com"},"status":"recommended"}
+    {
+      "id": "2026-09-10-001",
+      "date": "2026-09-10",
+      "category": "數學",
+      "title": "Khan Academy 可汗學院",
+      "summary": "非營利線上教室，用短影片與練習題帶孩子學數學、科學與人文。",
+      "basic_info": {
+        "年齡": "約6歲以上",
+        "語言": "英文為主",
+        "費用": "免費",
+        "學科": "數學、科學",
+        "平台": "網站／App"
+      },
+      "tags": [
+        "免費",
+        "課程"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Khan Academy",
+        "url": "https://www.khanacademy.org"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-002",
+      "date": "2026-09-10",
+      "category": "語文",
+      "title": "Khan Academy Kids",
+      "summary": "學齡前到低年級免費 App：拼音、早期閱讀與簡單數學。",
+      "basic_info": {
+        "年齡": "約2–8 歲",
+        "語言": "英文",
+        "費用": "免費",
+        "學科": "早期語文、數學",
+        "平台": "iOS／Android"
+      },
+      "tags": [
+        "學齡前",
+        "App"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Khan Academy Kids",
+        "url": "https://www.khanacademy.org/kids"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-003",
+      "date": "2026-09-10",
+      "category": "數學",
+      "title": "均一教育平台",
+      "summary": "台灣非營利平台，對應 108 課綱，影片加習題。",
+      "basic_info": {
+        "年齡": "國小至高中",
+        "語言": "繁體中文",
+        "費用": "免費",
+        "學科": "數學、自然",
+        "平台": "網站"
+      },
+      "tags": [
+        "台灣",
+        "108課綱"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "均一教育平台",
+        "url": "https://www.junyiacademy.org"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-004",
+      "date": "2026-09-10",
+      "category": "百科",
+      "title": "因材網",
+      "summary": "教育部適性學習平台，國英數自社等科目。",
+      "basic_info": {
+        "年齡": "國小至高中",
+        "語言": "繁體中文",
+        "費用": "免費",
+        "學科": "主要科目",
+        "平台": "網站"
+      },
+      "tags": [
+        "教育部",
+        "台灣"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "因材網",
+        "url": "https://adl.edu.tw"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-005",
+      "date": "2026-09-10",
+      "category": "程式",
+      "title": "Scratch",
+      "summary": "MIT 積木程式平台，孩子可做動畫、遊戲與故事。",
+      "basic_info": {
+        "年齡": "約8–16 歲",
+        "語言": "有繁體中文",
+        "費用": "免費",
+        "學科": "程式",
+        "平台": "網站"
+      },
+      "tags": [
+        "MIT",
+        "積木程式"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Scratch",
+        "url": "https://scratch.mit.edu"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-006",
+      "date": "2026-09-10",
+      "category": "程式",
+      "title": "ScratchJr",
+      "summary": "給更小孩子的 Scratch，適合還不會打字的低年級。",
+      "basic_info": {
+        "年齡": "約5–7 歲",
+        "語言": "有中文",
+        "費用": "免費",
+        "學科": "程式啟蒙",
+        "平台": "平板"
+      },
+      "tags": [
+        "低年級",
+        "App"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "ScratchJr",
+        "url": "https://www.scratchjr.org"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-007",
+      "date": "2026-09-10",
+      "category": "程式",
+      "title": "Code.org",
+      "summary": "一小時學程式關卡，可切換繁體中文。",
+      "basic_info": {
+        "年齡": "約4 歲以上",
+        "語言": "可切繁體中文",
+        "費用": "免費",
+        "學科": "程式",
+        "平台": "網站"
+      },
+      "tags": [
+        "Hour of Code"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Code.org",
+        "url": "https://code.org"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-008",
+      "date": "2026-09-10",
+      "category": "科學",
+      "title": "NASA Kids' Club",
+      "summary": "航太總署給孩子的太空遊戲與影片。",
+      "basic_info": {
+        "年齡": "約5–12 歲",
+        "語言": "英文",
+        "費用": "免費",
+        "學科": "太空",
+        "平台": "網站"
+      },
+      "tags": [
+        "太空",
+        "NASA"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "NASA Kids' Club",
+        "url": "https://www.nasa.gov/learning-resources/nasa-kids-club/"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-009",
+      "date": "2026-09-10",
+      "category": "科學",
+      "title": "National Geographic Kids",
+      "summary": "國家地理兒童版：動物、地理與科學短文。",
+      "basic_info": {
+        "年齡": "約6–14 歲",
+        "語言": "英文",
+        "費用": "多數免費",
+        "學科": "動物、地理",
+        "平台": "網站"
+      },
+      "tags": [
+        "動物",
+        "地理"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "National Geographic Kids",
+        "url": "https://kids.nationalgeographic.com"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-010",
+      "date": "2026-09-10",
+      "category": "科學",
+      "title": "PhET 互動模擬",
+      "summary": "免費模擬實驗，有繁體中文。",
+      "basic_info": {
+        "年齡": "約10 歲以上",
+        "語言": "有繁體中文",
+        "費用": "免費",
+        "學科": "物化生數",
+        "平台": "網站"
+      },
+      "tags": [
+        "實驗",
+        "模擬"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "PhET",
+        "url": "https://phet.colorado.edu/zh_TW/"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-011",
+      "date": "2026-09-10",
+      "category": "百科",
+      "title": "BBC Bitesize",
+      "summary": "BBC 中小學修習站，短影片與測驗。",
+      "basic_info": {
+        "年齡": "約3–16 歲",
+        "語言": "英文",
+        "費用": "免費",
+        "學科": "各科",
+        "平台": "網站"
+      },
+      "tags": [
+        "BBC",
+        "影片"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "BBC Bitesize",
+        "url": "https://www.bbc.co.uk/bitesize"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-012",
+      "date": "2026-09-10",
+      "category": "其他",
+      "title": "PBS Kids",
+      "summary": "美國公共電視兒童站，遊戲與影片。",
+      "basic_info": {
+        "年齡": "約2–8 歲",
+        "語言": "英文",
+        "費用": "免費",
+        "學科": "早期學習",
+        "平台": "網站／App"
+      },
+      "tags": [
+        "學齡前"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "PBS Kids",
+        "url": "https://pbskids.org"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-013",
+      "date": "2026-09-10",
+      "category": "語文",
+      "title": "萌典",
+      "summary": "開源國語辭典，查字義、注音與例句。",
+      "basic_info": {
+        "年齡": "識字後",
+        "語言": "繁體中文",
+        "費用": "免費",
+        "學科": "國語",
+        "平台": "網站"
+      },
+      "tags": [
+        "字典",
+        "注音"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "萌典",
+        "url": "https://www.moedict.tw"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-014",
+      "date": "2026-09-10",
+      "category": "語文",
+      "title": "國字標準字體筆順學習網",
+      "summary": "教育部標準楷體筆順動畫。",
+      "basic_info": {
+        "年齡": "開始寫字即可",
+        "語言": "繁體中文",
+        "費用": "免費",
+        "學科": "國字",
+        "平台": "網站"
+      },
+      "tags": [
+        "筆順",
+        "教育部"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "筆順學習網",
+        "url": "https://stroke-order.learningweb.moe.edu.tw"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-015",
+      "date": "2026-09-10",
+      "category": "語文",
+      "title": "國語日報親子網",
+      "summary": "標注音的兒童閱讀與寫作資源。",
+      "basic_info": {
+        "年齡": "國小",
+        "語言": "繁體中文",
+        "費用": "部分免費",
+        "學科": "閱讀、寫作",
+        "平台": "網站"
+      },
+      "tags": [
+        "注音",
+        "閱讀"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "國語日報",
+        "url": "https://www.mdnkids.com"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-10-016",
+      "date": "2026-09-10",
+      "category": "百科",
+      "title": "TED-Ed",
+      "summary": "短動畫把一個問題講清楚，適合國小高年級與國中。",
+      "basic_info": {
+        "年齡": "約10 歲以上",
+        "語言": "英文有字幕",
+        "費用": "免費",
+        "學科": "跨領域",
+        "平台": "網站／YouTube"
+      },
+      "tags": [
+        "動畫",
+        "短片"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "TED-Ed",
+        "url": "https://ed.ted.com"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-11-001",
+      "date": "2026-09-11",
+      "category": "語文",
+      "title": "國圖到你家｜線上閱讀專區",
+      "summary": "國家圖書館免費線上閱讀：政府出版電子書與影音，免註冊，網頁、App、電視盒都能看。",
+      "basic_info": {
+        "年齡": "學童／親子",
+        "語言": "繁體中文",
+        "費用": "免費",
+        "學科": "閱讀、跨領域",
+        "平台": "網站／App／電視盒"
+      },
+      "tags": [
+        "國圖",
+        "電子書",
+        "免費"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "NCLibTV 國圖到你家",
+        "url": "https://nclibtv.ncl.edu.tw/web/learning.php?id=1003&lang=zh-Hant"
+      },
+      "status": "recommended"
+    }
   ]
 }
