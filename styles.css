@@ -24,7 +24,22 @@ body {
   color: var(--ink);
   min-height: 100vh;
 }
-.wrap { max-width: 1180px; margin: 0 auto; padding: 40px 20px 80px; }
+.promo-banner {
+  display: block;
+  text-align: center;
+  background: #071427;
+  padding: 12px 12px 4px;
+  line-height: 0;
+}
+.promo-banner img {
+  display: block;
+  width: 728px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 20px 80px; }
 header { margin-bottom: 28px; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
 .brand { min-width: 0; }
 .social {
