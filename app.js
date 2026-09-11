@@ -115,7 +115,7 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-fetch("data.json?v=20260911j")
+fetch("data.json?v=20260911k")
   .then(function (r) {
     if (!r.ok) throw new Error("data.json HTTP " + r.status);
     return r.json();
