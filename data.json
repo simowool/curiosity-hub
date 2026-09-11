@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-11T07:55:23Z",
+    "updated": "2026-09-11T08:06:21Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -369,22 +369,34 @@
       "id": "2026-09-10-012",
       "date": "2026-09-10",
       "category": "其他",
-      "title": "PBS Kids",
-      "summary": "美國公共電視兒童站，遊戲與影片。",
+      "title": "PBS KIDS",
+      "summary": "美國公共電視幼兒教育平台：專家把關、零廣告無有害演算法；涵蓋 SEL 與讀寫／數學／自然遊戲，溫柔用掉螢幕時間。",
       "basic_info": {
-        "年齡": "約2–8 歲",
-        "語言": "英文",
-        "費用": "免費",
-        "學科": "早期學習",
+        "年齡": "約2–8歲（幼兒～國小低年級）",
+        "語言": "英文（美式）",
+        "費用": "免費、零商業廣告",
+        "學科": "社交情緒、讀寫拼讀、數學、自然與工程",
         "平台": "網站／App"
       },
       "tags": [
-        "學齡前"
+        "PBSKIDS",
+        "幼兒啟蒙",
+        "情緒教育",
+        "美語學習",
+        "免費育兒資源",
+        "安全螢幕時間",
+        "SEL",
+        "零廣告",
+        "Daniel Tiger",
+        "Wild Kratts",
+        "Curious George",
+        "互動遊戲",
+        "免費"
       ],
       "source": {
         "channel": "官方網站",
-        "name": "PBS Kids",
-        "url": "https://pbskids.org"
+        "name": "PBS KIDS",
+        "url": "https://pbskids.org/"
       },
       "status": "recommended"
     },
