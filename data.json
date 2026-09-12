@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-11T15:17:01Z",
+    "updated": "2026-09-12T02:08:39Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -409,6 +409,32 @@
         "channel": "官方網站",
         "name": "Google Read Along",
         "url": "https://readalong.google.com/"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-12-001",
+      "date": "2026-09-12",
+      "category": "語文",
+      "title": "Cool English 酷英網",
+      "summary": "教育部委託臺師大打造的免費英語站：聽讀寫說到會考／學測都有，AI 跟讀評分、寫作批改與闖關練習；零廣告，登入就能用。",
+      "basic_info": {
+        "年齡": "約7歲以上（國小～高中職／大專）",
+        "語言": "繁體中文介面、英語學習",
+        "費用": "免費、零廣告",
+        "學科": "英語聽讀寫說、會考／學測／英聽",
+        "平台": "網站"
+      },
+      "tags": [
+        "雙語",
+        "自主學習",
+        "英語自學",
+        "台灣"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Cool English 酷英網",
+        "url": "https://www.coolenglish.edu.tw/"
       },
       "status": "recommended"
     }
