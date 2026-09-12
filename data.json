@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-12T02:08:39Z",
+    "updated": "2026-09-12T06:37:35Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -435,6 +435,32 @@
         "channel": "官方網站",
         "name": "Cool English 酷英網",
         "url": "https://www.coolenglish.edu.tw/"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-12-002",
+      "date": "2026-09-12",
+      "category": "語文",
+      "title": "Storyline Online",
+      "summary": "美國演員工會基金會兒童繪本庫：好萊塢演員朗讀、原書插畫動態化與配樂；每本附教育引導，適合床邊故事與英語聽力。",
+      "basic_info": {
+        "年齡": "約4–12歲（幼兒～國小）",
+        "語言": "英文（美式發音）",
+        "費用": "免費",
+        "學科": "英語聽讀、繪本、情緒與價值觀",
+        "平台": "網站"
+      },
+      "tags": [
+        "英語朗讀",
+        "有聲繪本",
+        "雙語",
+        "睡前故事"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Storyline Online",
+        "url": "https://storylineonline.net/"
       },
       "status": "recommended"
     }
