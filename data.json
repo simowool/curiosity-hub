@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-12T06:37:35Z",
+    "updated": "2026-09-13T15:55:00Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -461,6 +461,32 @@
         "channel": "官方網站",
         "name": "Storyline Online",
         "url": "https://storylineonline.net/"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-13-001",
+      "date": "2026-09-13",
+      "category": "數學",
+      "title": "GeoGebra",
+      "summary": "數學動態視覺化：算式與圖形雙向連動，拖拉頂點參數跟著變；從國小幾何到高中微積分與 3D，免費無廣告，也可直接用全球教師現成課件。",
+      "basic_info": {
+        "年齡": "約9歲以上（國小中高～大學先修）",
+        "語言": "有多語介面",
+        "費用": "100% 免費、無廣告",
+        "學科": "幾何、代數、函數、統計、3D 向量、微積分",
+        "平台": "網站／App"
+      },
+      "tags": [
+        "數學",
+        "自主學習",
+        "動態視覺",
+        "STEM"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "GeoGebra",
+        "url": "https://www.geogebra.org/"
       },
       "status": "recommended"
     }
