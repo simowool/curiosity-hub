@@ -5,6 +5,10 @@ let chipSignature = "";
 const chipsEl = document.getElementById("chips");
 document.getElementById("q").addEventListener("input", render);
 
+function liveEntries(entries) {
+  return (entries || []).filter((e) => (e.status || "recommended") !== "offline");
+}
+
 function uniqueTags(entries) {
   const counts = new Map();
   (entries || []).forEach((e) => {
@@ -21,7 +25,7 @@ function uniqueTags(entries) {
 }
 
 function buildChips(force) {
-  const tagNames = uniqueTags(DATA.entries);
+  const tagNames = uniqueTags(liveEntries(DATA.entries));
   const names = ["全部"].concat(tagNames);
   const signature = names.join("\u0001");
   if (!force && signature === chipSignature) {
@@ -50,7 +54,8 @@ function render() {
   try {
     buildChips(false);
     const q = document.getElementById("q").value.trim().toLowerCase();
-    const items = (DATA.entries || []).filter((e) => {
+    const pool = liveEntries(DATA.entries);
+    const items = pool.filter((e) => {
       const tags = Array.isArray(e.tags) ? e.tags : [];
       const okTag = activeTag === "全部" || tags.indexOf(activeTag) !== -1;
       if (!okTag) return false;
@@ -61,7 +66,7 @@ function render() {
       return blob.includes(q);
     }).sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(b.id).localeCompare(String(a.id)));
 
-    document.getElementById("stats").textContent = items.length + " / " + (DATA.entries || []).length + " 則";
+    document.getElementById("stats").textContent = items.length + " / " + pool.length + " 則";
 
     const list = document.getElementById("list");
     list.innerHTML = "";
@@ -115,7 +120,7 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-fetch("data.json?v=20260913a")
+fetch("data.json?v=20260914a")
   .then(function (r) {
     if (!r.ok) throw new Error("data.json HTTP " + r.status);
     return r.json();
