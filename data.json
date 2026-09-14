@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "兒童、中小學自學與知識網站精選",
-    "updated": "2026-09-13T15:55:00Z",
+    "updated": "2026-09-14T15:40:43Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -30,7 +30,7 @@
         "name": "Khan Academy",
         "url": "https://www.khanacademy.org/"
       },
-      "status": "recommended"
+      "status": "offline"
     },
     {
       "id": "2026-09-10-002",
@@ -55,7 +55,7 @@
         "name": "Khan Academy Kids",
         "url": "https://www.khanacademy.org/kids"
       },
-      "status": "recommended"
+      "status": "offline"
     },
     {
       "id": "2026-09-10-003",
@@ -132,7 +132,7 @@
         "name": "ScratchJr",
         "url": "https://www.scratchjr.org/"
       },
-      "status": "recommended"
+      "status": "offline"
     },
     {
       "id": "2026-09-10-007",
@@ -183,7 +183,7 @@
         "name": "NASA Kids' Club",
         "url": "https://www.nasa.gov/learning-resources/nasa-kids-club/"
       },
-      "status": "recommended"
+      "status": "offline"
     },
     {
       "id": "2026-09-10-009",
@@ -234,7 +234,7 @@
         "name": "PhET Interactive Simulations",
         "url": "https://phet.colorado.edu/zh_TW/"
       },
-      "status": "recommended"
+      "status": "offline"
     },
     {
       "id": "2026-09-10-011",
@@ -259,7 +259,7 @@
         "name": "BBC Bitesize",
         "url": "https://www.bbc.co.uk/bitesize"
       },
-      "status": "recommended"
+      "status": "offline"
     },
     {
       "id": "2026-09-10-012",
@@ -285,7 +285,7 @@
         "name": "PBS KIDS",
         "url": "https://pbskids.org/"
       },
-      "status": "recommended"
+      "status": "offline"
     },
     {
       "id": "2026-09-10-014",
@@ -335,7 +335,7 @@
         "name": "TED-Ed",
         "url": "https://ed.ted.com/"
       },
-      "status": "recommended"
+      "status": "offline"
     },
     {
       "id": "2026-09-11-001",
@@ -410,7 +410,7 @@
         "name": "Google Read Along",
         "url": "https://readalong.google.com/"
       },
-      "status": "recommended"
+      "status": "offline"
     },
     {
       "id": "2026-09-12-001",
@@ -436,7 +436,7 @@
         "name": "Cool English 酷英網",
         "url": "https://www.coolenglish.edu.tw/"
       },
-      "status": "recommended"
+      "status": "offline"
     },
     {
       "id": "2026-09-12-002",
@@ -487,6 +487,31 @@
         "channel": "官方網站",
         "name": "GeoGebra",
         "url": "https://www.geogebra.org/"
+      },
+      "status": "offline"
+    },
+    {
+      "id": "2026-09-14-001",
+      "date": "2026-09-14",
+      "category": "百科",
+      "title": "臺大開放式課程",
+      "summary": "臺大課堂實況上網：完全免費、免註冊、無廣告；整學期錄影加教材，適合高中先修與跨領域自學。",
+      "basic_info": {
+        "年齡": "約16歲以上（高中升大學～成人）",
+        "語言": "繁體中文",
+        "費用": "完全免費、免註冊、無廣告",
+        "學科": "文史哲、理工資工、商管法律、大學先修",
+        "平台": "網站"
+      },
+      "tags": [
+        "自主學習",
+        "大學先修",
+        "台灣"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "臺大開放式課程",
+        "url": "https://ocw.aca.ntu.edu.tw/"
       },
       "status": "recommended"
     }
