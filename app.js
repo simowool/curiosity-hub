@@ -146,14 +146,13 @@ function render() {
 }
 
 function esc(s) {
-  return String(s)
-    .replace(/&/g, "&")
-    .replace(/</g, "<")
-    .replace(/>/g, ">")
-    .replace(/"/g, """);
+  return String(s).replace(/[&<>"']/g, function (ch) {
+    var n = { "&": 38, "<": 60, ">": 62, '"': 34, "'": 39 }[ch];
+    return String.fromCharCode(38, 35) + n + String.fromCharCode(59);
+  });
 }
 
-fetch("data.json?v=20260915c")
+fetch("data.json?v=20260915d")
   .then(function (r) {
     if (!r.ok) throw new Error("data.json HTTP " + r.status);
     return r.json();
