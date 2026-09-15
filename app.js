@@ -1,8 +1,19 @@
 let DATA = { meta: {}, entries: [] };
 let activeTag = "全部";
+let age = "全部";
 let chipSignature = "";
 
+const AGE_OPTS = [
+  { id: "全部", label: "全部" },
+  { id: "學齡前", label: "學齡前 Early years 3–5" },
+  { id: "小學", label: "小學 Primary 6–12" },
+  { id: "中學", label: "中學 Secondary 13–18" },
+  { id: "大學", label: "大學 University 18+" },
+  { id: "成人", label: "成人 Adult 18+" }
+];
+
 const chipsEl = document.getElementById("chips");
+const ageChips = document.getElementById("ages");
 document.getElementById("q").addEventListener("input", render);
 
 function liveEntries(entries) {
@@ -24,6 +35,25 @@ function uniqueTags(entries) {
     .map(([name]) => name);
 }
 
+function bandsOf(e) {
+  const info = e.basic_info || {};
+  if (Array.isArray(info["年齡段"]) && info["年齡段"].length) return info["年齡段"];
+  return [];
+}
+
+function buildAgeChips() {
+  if (!ageChips) return;
+  ageChips.innerHTML = "";
+  AGE_OPTS.forEach((opt) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip" + (opt.id === age ? " active" : "");
+    b.textContent = opt.label;
+    b.addEventListener("click", () => { age = opt.id; render(); });
+    ageChips.appendChild(b);
+  });
+}
+
 function buildChips(force) {
   const tagNames = uniqueTags(liveEntries(DATA.entries));
   const names = ["全部"].concat(tagNames);
@@ -32,6 +62,7 @@ function buildChips(force) {
     [...chipsEl.children].forEach((el) => {
       el.classList.toggle("active", el.textContent === activeTag);
     });
+    buildAgeChips();
     return;
   }
   chipSignature = signature;
@@ -42,12 +73,10 @@ function buildChips(force) {
     b.type = "button";
     b.className = "chip" + (name === activeTag ? " active" : "");
     b.textContent = name;
-    b.addEventListener("click", () => {
-      activeTag = name;
-      render();
-    });
+    b.addEventListener("click", () => { activeTag = name; render(); });
     chipsEl.appendChild(b);
   });
+  buildAgeChips();
 }
 
 function render() {
@@ -59,6 +88,7 @@ function render() {
       const tags = Array.isArray(e.tags) ? e.tags : [];
       const okTag = activeTag === "全部" || tags.indexOf(activeTag) !== -1;
       if (!okTag) return false;
+      if (age !== "全部" && bandsOf(e).indexOf(age) === -1) return false;
       if (!q) return true;
       const info = e.basic_info ? Object.values(e.basic_info).join(" ") : "";
       const blob = [e.title, e.summary, e.notes, info, tags.join(" "), e.source && e.source.name, e.source && e.source.url]
@@ -71,12 +101,15 @@ function render() {
     const list = document.getElementById("list");
     list.innerHTML = "";
     if (!items.length) {
-      list.innerHTML = '<div class="empty"><h2>還沒有符合的網站</h2><p>把想收的自學網站丟到 Grok，或改一下搜尋與標籤。</p></div>';
+      list.innerHTML = '<div class="empty"><h2>還沒有符合的網站</h2><p>把想收的自學網站丟到 Grok，或改一下搜尋、標籤與年齡分段。</p></div>';
       return;
     }
     items.forEach((e) => {
       const facts = e.basic_info
-        ? Object.entries(e.basic_info).map(([k, v]) => "<div><b>" + esc(k) + "</b><span>" + esc(String(v)) + "</span></div>").join("")
+        ? Object.entries(e.basic_info)
+            .filter(([k]) => k !== "年齡段")
+            .map(([k, v]) => "<div><b>" + esc(k) + "</b><span>" + esc(Array.isArray(v) ? v.join("、") : String(v)) + "</span></div>")
+            .join("")
         : "";
       const tagHtml = (Array.isArray(e.tags) ? e.tags : []).map((t) => {
         return '<button type="button" class="tag" data-tag="' + esc(t) + '">' + esc(t) + "</button>";
@@ -114,13 +147,13 @@ function render() {
 
 function esc(s) {
   return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+    .replace(/&/g, "&")
+    .replace(/</g, "<")
+    .replace(/>/g, ">")
+    .replace(/"/g, """);
 }
 
-fetch("data.json?v=20260914a")
+fetch("data.json?v=20260915c")
   .then(function (r) {
     if (!r.ok) throw new Error("data.json HTTP " + r.status);
     return r.json();
