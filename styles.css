@@ -74,6 +74,10 @@ h1 { font-size: 42px; font-weight: 600; margin: 0 0 8px; letter-spacing: 0.06em;
   border-radius: 999px; padding: 7px 12px; font-size: 13px; cursor: pointer;
 }
 .chip.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.age-row { width: 100%; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.age-label { font-size: 12px; color: var(--muted); letter-spacing: 0.04em; white-space: nowrap; }
+.chips.ages { width: auto; flex: 1; }
+.chips.ages .chip { font-size: 12px; padding: 5px 10px; }
 .stats { color: var(--muted); font-size: 13px; margin-left: auto; }
 .list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 @media (max-width: 900px) {
