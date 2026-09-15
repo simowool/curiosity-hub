@@ -57,6 +57,9 @@ h1 { font-size: 42px; font-weight: 600; margin: 0 0 8px; letter-spacing: 0.06em;
 @media (max-width: 560px) { .list { grid-template-columns: 1fr; } }
 .card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 16px; min-width: 0; }
 .card-top { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.badge-path { display: inline-flex; align-items: center; gap: 6px; }
+.path-kind { font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 11px; color: var(--muted); letter-spacing: 0.04em; }
+.path-sep { color: var(--line); font-size: 12px; }
 .badge { font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 12px; padding: 3px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
 .badge.科學 { background: #164e63; color: var(--科學); }
 .badge.數學 { background: #1e3a5f; color: var(--數學); }
@@ -67,7 +70,6 @@ h1 { font-size: 42px; font-weight: 600; margin: 0 0 8px; letter-spacing: 0.06em;
 .badge.百科 { background: #14532d; color: var(--百科); }
 .badge.其他 { background: #334155; color: var(--其他); }
 .badge.想想 { background: #3b2a12; color: #fbbf24; }
-.badge.論文 { background: #2a1f4a; color: #c4b5fd; }
 .title { font-size: 18px; margin: 0; flex: 1 1 100%; }
 .date { color: var(--muted); font-size: 13px; font-family: "Avenir Next", "PingFang TC", sans-serif; }
 .summary { margin: 10px 0 0; line-height: 1.65; font-size: 14.5px; }
