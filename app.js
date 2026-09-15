@@ -133,7 +133,7 @@ function render() {
         if (e.source.url) src += ' · <a href="' + esc(e.source.url) + '" target="_blank" rel="noopener">開啟</a>';
         src += "</div>";
       }
-      const more = (k === "thought" || k === "paper") ? '<p class="more"><a href="article.html?id=' + encodeURIComponent(e.id) + '">閱讀全文</a></p>' : "";
+      const more = (k === "thought" || k === "paper") ? '<p class="more"><a href="a/' + encodeURIComponent(e.id) + '.html">閱讀全文</a></p>' : "";
       const el = document.createElement("article");
       el.className = "card";
       el.innerHTML = '<div class="card-top"><span class="badge ' + esc(badgeClass) + '">' + esc(badgeText) + '</span><h2 class="title">' + esc(e.title || "未命名") + '</h2><span class="date">' + esc(e.date || "") + "</span></div>" + (e.summary ? '<p class="summary">' + esc(e.summary) + "</p>" : "") + more + (facts ? '<div class="facts">' + facts + "</div>" : "") + (tagHtml ? '<div class="tags">' + tagHtml + "</div>" : "") + src;
