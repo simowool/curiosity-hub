@@ -33,19 +33,39 @@ header {
   gap: 20px;
 }
 .brand { min-width: 0; flex: 0 1 auto; }
-.promo-banner {
-  display: block;
-  flex: 0 1 728px;
+.partner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   margin-left: auto;
-  line-height: 0;
+  max-width: 420px;
+  text-decoration: none;
+  color: var(--ink);
+  background: #132033;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 16px;
 }
-.promo-banner img {
+.partner-name {
+  font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #7dd3fc;
+  white-space: nowrap;
+}
+.partner-copy {
+  font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.partner-copy strong {
   display: block;
-  width: 728px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 14px;
 }
+.partner:hover { border-color: var(--accent); }
 .social {
   display: inline-block;
   font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
@@ -83,7 +103,7 @@ h1 { font-size: 42px; font-weight: 600; margin: 0 0 8px; letter-spacing: 0.06em;
 @media (max-width: 900px) {
   .list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   header { flex-wrap: wrap; align-items: flex-start; }
-  .promo-banner { flex: 1 1 100%; margin-left: 0; }
+  .partner { flex: 1 1 100%; margin-left: 0; max-width: none; }
 }
 @media (max-width: 560px) { .list { grid-template-columns: 1fr; } }
 .card {
