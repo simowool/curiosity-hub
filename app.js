@@ -3,14 +3,12 @@ let activeTag = "全部";
 let age = "全部";
 let kind = "全部";
 let chipSignature = "";
-
 const KIND_OPTS = [
   { id: "全部", label: "全部" },
   { id: "site", label: "網站" },
   { id: "thought", label: "想想" },
   { id: "paper", label: "論文" }
 ];
-
 const AGE_OPTS = [
   { id: "全部", label: "全部" },
   { id: "學齡前", label: "學齡前 Early years 3–5" },
@@ -19,13 +17,11 @@ const AGE_OPTS = [
   { id: "大學", label: "大學 University 18+" },
   { id: "成人", label: "成人 Adult 18+" }
 ];
-
 const chipsEl = document.getElementById("chips");
 const ageChips = document.getElementById("ages");
 const kindsEl = document.getElementById("kinds");
 const ageRow = document.getElementById("ageRow");
 document.getElementById("q").addEventListener("input", render);
-
 function kindOf(e) { return e.kind || "site"; }
 function kindLabel(k) {
   if (k === "thought") return "想想";
@@ -114,7 +110,7 @@ function render() {
       }
       if (!q) return true;
       const info = e.basic_info ? Object.values(e.basic_info).join(" ") : "";
-      const blob = [e.title, e.summary, e.notes, kindLabel(kindOf(e)), info, tags.join(" "), e.source && e.source.name, e.source && e.source.url].filter(Boolean).join(" ").toLowerCase();
+      const blob = [e.title, e.summary, e.content, e.notes, kindLabel(kindOf(e)), info, tags.join(" "), e.source && e.source.name, e.source && e.source.url].filter(Boolean).join(" ").toLowerCase();
       return blob.includes(q);
     }).sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(b.id).localeCompare(String(a.id)));
     document.getElementById("stats").textContent = items.length + " / " + pool.length + " 則";
@@ -128,9 +124,7 @@ function render() {
       const k = kindOf(e);
       const badgeText = k === "site" ? (e.category || "其他") : kindLabel(k);
       const badgeClass = k === "site" ? (e.category || "其他") : kindLabel(k);
-      const facts = e.basic_info
-        ? Object.entries(e.basic_info).filter(([key]) => key !== "年齡段").map(([key, v]) => "<div><b>" + esc(key) + "</b><span>" + esc(Array.isArray(v) ? v.join("、") : String(v)) + "</span></div>").join("")
-        : "";
+      const facts = e.basic_info ? Object.entries(e.basic_info).filter(([key]) => key !== "年齡段").map(([key, v]) => "<div><b>" + esc(key) + "</b><span>" + esc(Array.isArray(v) ? v.join("、") : String(v)) + "</span></div>").join("") : "";
       const tagHtml = (Array.isArray(e.tags) ? e.tags : []).map((t) => '<button type="button" class="tag" data-tag="' + esc(t) + '">' + esc(t) + "</button>").join("");
       let src = "";
       if (e.source) {
@@ -139,9 +133,10 @@ function render() {
         if (e.source.url) src += ' · <a href="' + esc(e.source.url) + '" target="_blank" rel="noopener">開啟</a>';
         src += "</div>";
       }
+      const more = (k === "thought" || k === "paper") ? '<p class="more"><a href="article.html?id=' + encodeURIComponent(e.id) + '">閱讀全文</a></p>' : "";
       const el = document.createElement("article");
       el.className = "card";
-      el.innerHTML = '<div class="card-top"><span class="badge ' + esc(badgeClass) + '">' + esc(badgeText) + '</span><h2 class="title">' + esc(e.title || "未命名") + '</h2><span class="date">' + esc(e.date || "") + "</span></div>" + (e.summary ? '<p class="summary">' + esc(e.summary) + "</p>" : "") + (facts ? '<div class="facts">' + facts + "</div>" : "") + (tagHtml ? '<div class="tags">' + tagHtml + "</div>" : "") + src;
+      el.innerHTML = '<div class="card-top"><span class="badge ' + esc(badgeClass) + '">' + esc(badgeText) + '</span><h2 class="title">' + esc(e.title || "未命名") + '</h2><span class="date">' + esc(e.date || "") + "</span></div>" + (e.summary ? '<p class="summary">' + esc(e.summary) + "</p>" : "") + more + (facts ? '<div class="facts">' + facts + "</div>" : "") + (tagHtml ? '<div class="tags">' + tagHtml + "</div>" : "") + src;
       el.querySelectorAll("button.tag").forEach((btn) => {
         btn.addEventListener("click", () => { activeTag = btn.getAttribute("data-tag") || "全部"; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
       });
@@ -155,7 +150,7 @@ function esc(s) {
     return String.fromCharCode(38, 35) + n + String.fromCharCode(59);
   });
 }
-fetch("data.json?v=20260915e")
+fetch("data.json?v=20260915f")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     DATA = d && typeof d === "object" ? d : { meta: {}, entries: [] };
