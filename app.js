@@ -187,7 +187,7 @@ function esc(s) {
     return String.fromCharCode(38, 35) + n + String.fromCharCode(59);
   });
 }
-fetch("data.json?v=20260916f")
+fetch("data.json?v=20260916g")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     DATA = d && typeof d === "object" ? d : { meta: {}, entries: [] };
