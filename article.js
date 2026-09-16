@@ -6,8 +6,7 @@ function esc(s) {
   });
 }
 function kindLabel(k) {
-  if (k === "thought") return "想想";
-  if (k === "paper") return "論文";
+  if (k === "thought" || k === "paper") return "好奇想想";
   return "網站";
 }
 function linkify(escaped) {
@@ -32,7 +31,7 @@ function paragraphs(text) {
 var params = new URLSearchParams(window.location.search);
 var id = params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-fetch("data.json?v=20260916h")
+fetch("data.json?v=20260916i")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     var entries = (d && d.entries) || [];
@@ -59,7 +58,7 @@ fetch("data.json?v=20260916h")
       src += "</p>";
     }
     box.innerHTML =
-      '<div class="card-top"><span class="badge ' + esc(kindLabel(k)) + '">' + esc(kindLabel(k)) +
+      '<div class="card-top"><span class="badge 想想">' + esc(kindLabel(k)) +
       '</span><span class="date">' + esc(e.date || "") + "</span></div>" +
       "<h1>" + esc(e.title || "未命名") + "</h1>" +
       (facts ? '<div class="facts">' + facts + "</div>" : "") +
