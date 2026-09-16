@@ -86,6 +86,13 @@ h1 { font-size: 42px; font-weight: 600; margin: 0 0 8px; letter-spacing: 0.06em;
 footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
 footer a { color: var(--accent); text-decoration: none; }
 .reader-wrap { max-width: 680px; padding-top: 8px; }
+
+.reader-wrap, .reader, .article-body {
+  font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif;
+}
+.reader h1, .article-body .thought-lead, .article-body .thought-key {
+  font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif;
+}
 .back { margin: 0 0 18px; font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 14px; }
 .back a { color: var(--accent); text-decoration: none; }
 .reader h1 { font-size: 30px; line-height: 1.4; margin: 12px 0 20px; letter-spacing: 0.02em; font-weight: 600; }
