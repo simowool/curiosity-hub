@@ -1,1 +1,650 @@
-{"meta":{"title":"好奇學學","subtitle":"網站、想法與論文精選（持續更新）","updated":"2026-09-16T01:16:00Z","locale":"zh-Hant"},"entries":[{"id":"2026-09-10-001","date":"2026-09-10","category":"數學","title":"Khan Academy 可汗學院","summary":"全球線上自學天花板：永久免費零廣告，手寫板影片＋題庫精熟學習；基礎數理有繁中，也可切英文練學術英語，涵蓋小學到大學先修與 SAT。","basic_info":{"年齡":"小學–大學（6歲以上）","語言":"基礎數理有繁中，可切英文","費用":"永久免費、零廣告、無付費牆","學科":"數學、理化生物、經濟理財、程式、SAT","平台":"網站／App","年齡段":["小學","中學","大學"]},"tags":["自主學習","數學","精熟學習","雙語"],"source":{"channel":"官方網站","name":"Khan Academy","url":"https://www.khanacademy.org/"},"status":"offline","kind":"site"},{"id":"2026-09-10-002","date":"2026-09-10","category":"語文","title":"Khan Academy Kids","summary":"可汗學院＋史丹佛打造的幼兒啟蒙 App：永久免費、零廣告無內購；小熊 Kodi 自適應練習，含 Phonics、數學與國家地理有聲書，可離線。","basic_info":{"年齡":"學齡前–小學（3–12歲）","語言":"英文","費用":"永久免費、零廣告、無內購","學科":"英語讀寫、數學、科普有聲書、SEL","平台":"iOS／Android／Amazon","年齡段":["學齡前","小學"]},"tags":["幼兒啟蒙","雙語","App"],"source":{"channel":"官方網站","name":"Khan Academy Kids","url":"https://www.khanacademy.org/kids"},"status":"offline","kind":"site"},{"id":"2026-09-10-003","date":"2026-09-10","category":"百科","title":"均一教育平台","summary":"被譽為台灣版可汗學院：108課綱短影音＋做中學練習與徽章，AI助教即時引導，完全免費零廣告。","basic_info":{"年齡":"小學–中學（6–18歲）","語言":"繁體中文","費用":"完全免費、零廣告","學科":"數學、國語文、英語、自然、社會、程式、理財、AI素養","平台":"網站","年齡段":["小學","中學"]},"tags":["自主學習","108課綱","台灣","中小學"],"source":{"channel":"官方網站","name":"均一教育平台","url":"https://www.junyiacademy.org/"},"status":"recommended","kind":"site"},{"id":"2026-09-10-005","date":"2026-09-10","category":"程式","title":"Scratch","summary":"MIT 積木程式：拖拉做動畫、互動故事與小遊戲，約8–16歲免費使用。儲存分享需帳號，也可用離線編輯器；建議初期只創作不公開，注意留言規範。","basic_info":{"年齡":"小學–中學（6–18歲）","語言":"有繁體中文","費用":"免費","學科":"程式、創意、動畫與遊戲","平台":"網站／離線編輯器","年齡段":["小學","中學"]},"tags":["程式","創意學習","MIT"],"source":{"channel":"官方網站","name":"Scratch","url":"https://scratch.mit.edu/"},"status":"recommended","kind":"site"},{"id":"2026-09-10-006","date":"2026-09-10","category":"程式","title":"ScratchJr","summary":"MIT＋塔夫茨為低齡打造的圖形積木程式：不識字也能拼動畫與故事；可錄音自拍繪圖，免費無廣告，銜接標準版 Scratch 的跳板。","basic_info":{"年齡":"學齡前–小學（3–12歲）","語言":"圖形介面為主（不依賴文字）","費用":"免費、零廣告、無內購","學科":"運算思維、創意表達、動畫與故事","平台":"iOS／Android／Chromebook","年齡段":["學齡前","小學"]},"tags":["程式","運算思維","幼兒啟蒙","App"],"source":{"channel":"官方網站","name":"ScratchJr","url":"https://www.scratchjr.org/"},"status":"offline","kind":"site"},{"id":"2026-09-10-007","date":"2026-09-10","category":"程式","title":"Code.org｜Hour of Code","summary":"一小時程式設計：拖曳積木像玩遊戲就學會寫程式，挫折感低、完成有電子證書；有繁中，適合帶小孩週末入門或自己體驗。","basic_info":{"年齡":"學齡前–中學（3–18歲）","語言":"可切繁體中文","費用":"免費","學科":"程式入門、運算思維","平台":"網站","年齡段":["學齡前","小學","中學"]},"tags":["程式","運算思維","積木程式","親子共學"],"source":{"channel":"官方網站","name":"Code.org Hour of Code","url":"https://code.org/zh-Hant/hour-of-code"},"status":"recommended","kind":"site"},{"id":"2026-09-10-008","date":"2026-09-10","category":"科學","title":"NASA Kids' Club","summary":"NASA 官方幼童航太第一站：火箭、太空站與探測車闖關小遊戲；真實影像＋簡明英語。偏遊戲啟蒙（約4–10歲）；系統科普與 DIY 可搭配 Space Place。","basic_info":{"年齡":"學齡前–小學（3–12歲）","語言":"英文（指令簡短，適合 STEM 英文入門）","費用":"免費","學科":"太空人日常、太空站、火箭與探測車、基礎工程","平台":"網站","年齡段":["學齡前","小學"]},"tags":["太空","NASA","STEM"],"source":{"channel":"官方網站","name":"NASA Kids' Club","url":"https://www.nasa.gov/learning-resources/nasa-kids-club/"},"status":"offline","kind":"site"},{"id":"2026-09-10-009","date":"2026-09-10","category":"科學","title":"National Geographic Kids","summary":"國家地理少兒知識遊樂園：頂級實拍圖文走進野生動物與極地，雙語閱讀＋益智遊戲小測驗；免付費、無繁瑣註冊。","basic_info":{"年齡":"學齡前–中學（3–18歲）","語言":"英文（適合雙語閱讀）","費用":"免費、無繁瑣註冊","學科":"動物生態、恐龍、太空、地球科學、文化與環境保育","平台":"網站","年齡段":["學齡前","小學","中學"]},"tags":["自然科普","雙語","STEM"],"source":{"channel":"官方網站","name":"National Geographic Kids","url":"https://kids.nationalgeographic.com/"},"status":"recommended","kind":"site"},{"id":"2026-09-10-010","date":"2026-09-10","category":"科學","title":"PhET 互動模擬","summary":"科羅拉多大學虛擬實驗室：把電流、化學鍵與抽象數學變成可拉動調整的模擬；免安裝免付費，多數有繁中。可用「猜測➔實驗➔驗證」帶探究。","basic_info":{"年齡":"小學–大學（6歲以上）","語言":"繁體中文（絕大多數模擬支援）","費用":"免費、免安裝","學科":"數學、物理、化學、生物、地科","平台":"網站","年齡段":["小學","中學","大學"]},"tags":["科學探究","STEM","虛擬實驗室","繁體中文"],"source":{"channel":"官方網站","name":"PhET Interactive Simulations","url":"https://phet.colorado.edu/zh_TW/"},"status":"offline","kind":"site"},{"id":"2026-09-10-011","date":"2026-09-10","category":"百科","title":"BBC Bitesize","summary":"英國 BBC 國家級自學站：課綱拆成一口大小的圖文短片與測驗，涵蓋 Primary 到 GCSE；純正英式發音、零廣告，適合英式學科與雙語學習。","basic_info":{"年齡":"學齡前–中學（3–18歲）","語言":"英文（英式發音）","費用":"免費、零商業廣告","學科":"英數、理化生物、歷史地理、文學與公民","平台":"網站","年齡段":["學齡前","小學","中學"]},"tags":["雙語","自主學習","跨領域學習"],"source":{"channel":"官方網站","name":"BBC Bitesize","url":"https://www.bbc.co.uk/bitesize"},"status":"offline","kind":"site"},{"id":"2026-09-10-012","date":"2026-09-10","category":"其他","title":"PBS KIDS","summary":"美國公共電視幼兒教育平台：專家把關、零廣告無有害演算法；涵蓋 SEL 與讀寫／數學／自然遊戲，溫柔用掉螢幕時間。","basic_info":{"年齡":"學齡前–小學（3–12歲）","語言":"英文（美式）","費用":"免費、零商業廣告","學科":"社交情緒、讀寫拼讀、數學、自然與工程","平台":"網站／App","年齡段":["學齡前","小學"]},"tags":["幼兒啟蒙","情緒教育","雙語","安全螢幕時間"],"source":{"channel":"官方網站","name":"PBS KIDS","url":"https://pbskids.org/"},"status":"offline","kind":"site"},{"id":"2026-09-10-014","date":"2026-09-10","category":"語文","title":"國字標準字體筆順學習網","summary":"教育部標準楷體筆順動畫。","basic_info":{"年齡":"學齡前–小學（3–12歲）","語言":"繁體中文","費用":"免費","學科":"國字","平台":"網站","年齡段":["學齡前","小學"]},"tags":["國字","筆順","教育部"],"source":{"channel":"官方網站","name":"筆順學習網","url":"https://stroke-order.learningweb.moe.edu.tw"},"status":"recommended","kind":"site"},{"id":"2026-09-10-016","date":"2026-09-10","category":"百科","title":"TED-Ed","summary":"TED 精美動畫把哲學、科學與歷史濃縮成約5分鐘：官網有 Watch➔Think➔Dig Deeper➔Discuss 探究閉環；多有繁中字幕，激發獨立思考。","basic_info":{"年齡":"小學–成人（6歲以上）","語言":"英文（多有繁體中文字幕）","費用":"免費","學科":"自然數學、人文社會、批判思考與生活技能","平台":"網站／YouTube","年齡段":["小學","中學","大學","成人"]},"tags":["思辨","自主學習","雙語"],"source":{"channel":"官方網站","name":"TED-Ed","url":"https://ed.ted.com/"},"status":"offline","kind":"site"},{"id":"2026-09-11-001","date":"2026-09-11","category":"語文","title":"國圖到你家｜有聲兒童繪本","summary":"國家圖書館免費有聲兒童繪本與影音：文學藝術、自然生態、科學工藝、藝術文物、人文歷史都有，免註冊就能講睡前故事。","basic_info":{"年齡":"學齡前–小學（3–12歲）","語言":"繁體中文","費用":"免費（免註冊）","學科":"閱讀、繪本、跨領域","平台":"網站／App／電視盒","年齡段":["學齡前","小學"]},"tags":["有聲繪本","兒童故事","國圖","睡前故事"],"source":{"channel":"官方網站","name":"NCLibTV 國圖到你家","url":"https://nclibtv.ncl.edu.tw/web/learning.php?id=1003&lang=zh-Hant"},"status":"recommended","kind":"site"},{"id":"2026-09-11-002","date":"2026-09-11","category":"科學","title":"NASA Space Place","summary":"NASA 免費太空科普遊戲寶庫：可愛插畫與小遊戲認識黑洞、太陽系與地球氣候，還有手作太空船 DIY；零門檻、零廣告，英文站可用瀏覽器翻譯。","basic_info":{"年齡":"學齡前–小學（3–12歲）","語言":"英文（可瀏覽器翻譯成中文）","費用":"免費、零廣告","學科":"天文、地球科學、太空科技","平台":"網站","年齡段":["學齡前","小學"]},"tags":["太空","NASA","手作DIY"],"source":{"channel":"官方網站","name":"NASA Space Place","url":"https://spaceplace.nasa.gov"},"status":"recommended","kind":"site"},{"id":"2026-09-11-003","date":"2026-09-11","category":"語文","title":"Google Read Along","summary":"孩子把故事念給閱讀夥伴 Diya 聽，即時鼓勵與協助、不打斷；可下載離線，適合英語朗讀練習。首次需開麥克風，建議家長陪同選故事與練習時間。","basic_info":{"年齡":"學齡前–小學（3–12歲）","語言":"英語為主（及其他支援語言）","費用":"免費","學科":"英語朗讀、閱讀","平台":"網站／Android","年齡段":["學齡前","小學"]},"tags":["英語朗讀","AI陪伴"],"source":{"channel":"官方網站","name":"Google Read Along","url":"https://readalong.google.com/"},"status":"offline","kind":"site"},{"id":"2026-09-12-001","date":"2026-09-12","category":"語文","title":"Cool English 酷英網","summary":"教育部委託臺師大打造的免費英語站：聽讀寫說到會考／學測都有，AI 跟讀評分、寫作批改與闖關練習；零廣告，登入就能用。","basic_info":{"年齡":"小學–大學（6歲以上）","語言":"繁體中文介面、英語學習","費用":"免費、零廣告","學科":"英語聽讀寫說、會考／學測／英聽","平台":"網站","年齡段":["小學","中學","大學"]},"tags":["雙語","自主學習","英語自學","台灣"],"source":{"channel":"官方網站","name":"Cool English 酷英網","url":"https://www.coolenglish.edu.tw/"},"status":"offline","kind":"site"},{"id":"2026-09-12-002","date":"2026-09-12","category":"語文","title":"Storyline Online","summary":"美國演員工會基金會兒童繪本庫：好萊塢演員朗讀、原書插畫動態化與配樂；每本附教育引導，適合床邊故事與英語聽力。","basic_info":{"年齡":"學齡前–小學（3–12歲）","語言":"英文（美式發音）","費用":"免費","學科":"英語聽讀、繪本、情緒與價值觀","平台":"網站","年齡段":["學齡前","小學"]},"tags":["英語朗讀","有聲繪本","雙語","睡前故事"],"source":{"channel":"官方網站","name":"Storyline Online","url":"https://storylineonline.net/"},"status":"recommended","kind":"site"},{"id":"2026-09-13-001","date":"2026-09-13","category":"數學","title":"GeoGebra","summary":"數學動態視覺化：算式與圖形雙向連動，拖拉頂點參數跟著變；從國小幾何到高中微積分與 3D，免費無廣告，也可直接用全球教師現成課件。","basic_info":{"年齡":"小學–大學（6歲以上）","語言":"有多語介面","費用":"100% 免費、無廣告","學科":"幾何、代數、函數、統計、3D 向量、微積分","平台":"網站／App","年齡段":["小學","中學","大學"]},"tags":["數學","自主學習","動態視覺","STEM"],"source":{"channel":"官方網站","name":"GeoGebra","url":"https://www.geogebra.org/"},"status":"offline","kind":"site"},{"id":"2026-09-14-001","date":"2026-09-14","category":"百科","title":"臺大開放式課程","summary":"臺大課堂實況上網：完全免費、免註冊、無廣告；整學期錄影加教材，適合高中先修與跨領域自學。","basic_info":{"年齡":"中學–成人（13歲以上）","語言":"繁體中文","費用":"完全免費、免註冊、無廣告","學科":"文史哲、理工資工、商管法律、大學先修","平台":"網站","年齡段":["中學","大學","成人"]},"tags":["自主學習","大學先修","台灣"],"source":{"channel":"官方網站","name":"臺大開放式課程","url":"https://ocw.aca.ntu.edu.tw/"},"status":"recommended","kind":"site"}]}
+{
+  "meta": {
+    "title": "好奇學學",
+    "subtitle": "網站、想法與論文精選（持續更新）",
+    "updated": "2026-09-16T03:21:23Z",
+    "locale": "zh-Hant"
+  },
+  "entries": [
+    {
+      "id": "2026-09-10-001",
+      "date": "2026-09-10",
+      "category": "數學",
+      "title": "Khan Academy 可汗學院",
+      "summary": "全球線上自學天花板：永久免費零廣告，手寫板影片＋題庫精熟學習；基礎數理有繁中，也可切英文練學術英語，涵蓋小學到大學先修與 SAT。",
+      "basic_info": {
+        "年齡": "小學–大學（6歲以上）",
+        "語言": "基礎數理有繁中，可切英文",
+        "費用": "永久免費、零廣告、無付費牆",
+        "學科": "數學、理化生物、經濟理財、程式、SAT",
+        "平台": "網站／App",
+        "年齡段": [
+          "小學",
+          "中學",
+          "大學"
+        ]
+      },
+      "tags": [
+        "自主學習",
+        "數學",
+        "精熟學習",
+        "雙語"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Khan Academy",
+        "url": "https://www.khanacademy.org/"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-002",
+      "date": "2026-09-10",
+      "category": "語文",
+      "title": "Khan Academy Kids",
+      "summary": "可汗學院＋史丹佛打造的幼兒啟蒙 App：永久免費、零廣告無內購；小熊 Kodi 自適應練習，含 Phonics、數學與國家地理有聲書，可離線。",
+      "basic_info": {
+        "年齡": "學齡前–小學（3–12歲）",
+        "語言": "英文",
+        "費用": "永久免費、零廣告、無內購",
+        "學科": "英語讀寫、數學、科普有聲書、SEL",
+        "平台": "iOS／Android／Amazon",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "幼兒啟蒙",
+        "雙語",
+        "App"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Khan Academy Kids",
+        "url": "https://www.khanacademy.org/kids"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-003",
+      "date": "2026-09-10",
+      "category": "百科",
+      "title": "均一教育平台",
+      "summary": "被譽為台灣版可汗學院：108課綱短影音＋做中學練習與徽章，AI助教即時引導，完全免費零廣告。",
+      "basic_info": {
+        "年齡": "小學–中學（6–18歲）",
+        "語言": "繁體中文",
+        "費用": "完全免費、零廣告",
+        "學科": "數學、國語文、英語、自然、社會、程式、理財、AI素養",
+        "平台": "網站",
+        "年齡段": [
+          "小學",
+          "中學"
+        ]
+      },
+      "tags": [
+        "自主學習",
+        "108課綱",
+        "台灣",
+        "中小學"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "均一教育平台",
+        "url": "https://www.junyiacademy.org/"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-005",
+      "date": "2026-09-10",
+      "category": "程式",
+      "title": "Scratch",
+      "summary": "MIT 積木程式：拖拉做動畫、互動故事與小遊戲，約8–16歲免費使用。儲存分享需帳號，也可用離線編輯器；建議初期只創作不公開，注意留言規範。",
+      "basic_info": {
+        "年齡": "小學–中學（6–18歲）",
+        "語言": "有繁體中文",
+        "費用": "免費",
+        "學科": "程式、創意、動畫與遊戲",
+        "平台": "網站／離線編輯器",
+        "年齡段": [
+          "小學",
+          "中學"
+        ]
+      },
+      "tags": [
+        "程式",
+        "創意學習",
+        "MIT"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Scratch",
+        "url": "https://scratch.mit.edu/"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-006",
+      "date": "2026-09-10",
+      "category": "程式",
+      "title": "ScratchJr",
+      "summary": "MIT＋塔夫茨為低齡打造的圖形積木程式：不識字也能拼動畫與故事；可錄音自拍繪圖，免費無廣告，銜接標準版 Scratch 的跳板。",
+      "basic_info": {
+        "年齡": "學齡前–小學（3–12歲）",
+        "語言": "圖形介面為主（不依賴文字）",
+        "費用": "免費、零廣告、無內購",
+        "學科": "運算思維、創意表達、動畫與故事",
+        "平台": "iOS／Android／Chromebook",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "程式",
+        "運算思維",
+        "幼兒啟蒙",
+        "App"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "ScratchJr",
+        "url": "https://www.scratchjr.org/"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-007",
+      "date": "2026-09-10",
+      "category": "程式",
+      "title": "Code.org｜Hour of Code",
+      "summary": "一小時程式設計：拖曳積木像玩遊戲就學會寫程式，挫折感低、完成有電子證書；有繁中，適合帶小孩週末入門或自己體驗。",
+      "basic_info": {
+        "年齡": "學齡前–中學（3–18歲）",
+        "語言": "可切繁體中文",
+        "費用": "免費",
+        "學科": "程式入門、運算思維",
+        "平台": "網站",
+        "年齡段": [
+          "學齡前",
+          "小學",
+          "中學"
+        ]
+      },
+      "tags": [
+        "程式",
+        "運算思維",
+        "積木程式",
+        "親子共學"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Code.org Hour of Code",
+        "url": "https://code.org/zh-Hant/hour-of-code"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-008",
+      "date": "2026-09-10",
+      "category": "科學",
+      "title": "NASA Kids' Club",
+      "summary": "NASA 官方幼童航太第一站：火箭、太空站與探測車闖關小遊戲；真實影像＋簡明英語。偏遊戲啟蒙（約4–10歲）；系統科普與 DIY 可搭配 Space Place。",
+      "basic_info": {
+        "年齡": "學齡前–小學（3–12歲）",
+        "語言": "英文（指令簡短，適合 STEM 英文入門）",
+        "費用": "免費",
+        "學科": "太空人日常、太空站、火箭與探測車、基礎工程",
+        "平台": "網站",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "太空",
+        "NASA",
+        "STEM"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "NASA Kids' Club",
+        "url": "https://www.nasa.gov/learning-resources/nasa-kids-club/"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-009",
+      "date": "2026-09-10",
+      "category": "科學",
+      "title": "National Geographic Kids",
+      "summary": "國家地理少兒知識遊樂園：頂級實拍圖文走進野生動物與極地，雙語閱讀＋益智遊戲小測驗；免付費、無繁瑣註冊。",
+      "basic_info": {
+        "年齡": "學齡前–中學（3–18歲）",
+        "語言": "英文（適合雙語閱讀）",
+        "費用": "免費、無繁瑣註冊",
+        "學科": "動物生態、恐龍、太空、地球科學、文化與環境保育",
+        "平台": "網站",
+        "年齡段": [
+          "學齡前",
+          "小學",
+          "中學"
+        ]
+      },
+      "tags": [
+        "自然科普",
+        "雙語",
+        "STEM"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "National Geographic Kids",
+        "url": "https://kids.nationalgeographic.com/"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-010",
+      "date": "2026-09-10",
+      "category": "科學",
+      "title": "PhET 互動模擬",
+      "summary": "科羅拉多大學虛擬實驗室：把電流、化學鍵與抽象數學變成可拉動調整的模擬；免安裝免付費，多數有繁中。可用「猜測➔實驗➔驗證」帶探究。",
+      "basic_info": {
+        "年齡": "小學–大學（6歲以上）",
+        "語言": "繁體中文（絕大多數模擬支援）",
+        "費用": "免費、免安裝",
+        "學科": "數學、物理、化學、生物、地科",
+        "平台": "網站",
+        "年齡段": [
+          "小學",
+          "中學",
+          "大學"
+        ]
+      },
+      "tags": [
+        "科學探究",
+        "STEM",
+        "虛擬實驗室",
+        "繁體中文"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "PhET Interactive Simulations",
+        "url": "https://phet.colorado.edu/zh_TW/"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-011",
+      "date": "2026-09-10",
+      "category": "百科",
+      "title": "BBC Bitesize",
+      "summary": "英國 BBC 國家級自學站：課綱拆成一口大小的圖文短片與測驗，涵蓋 Primary 到 GCSE；純正英式發音、零廣告，適合英式學科與雙語學習。",
+      "basic_info": {
+        "年齡": "學齡前–中學（3–18歲）",
+        "語言": "英文（英式發音）",
+        "費用": "免費、零商業廣告",
+        "學科": "英數、理化生物、歷史地理、文學與公民",
+        "平台": "網站",
+        "年齡段": [
+          "學齡前",
+          "小學",
+          "中學"
+        ]
+      },
+      "tags": [
+        "雙語",
+        "自主學習",
+        "跨領域學習"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "BBC Bitesize",
+        "url": "https://www.bbc.co.uk/bitesize"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-012",
+      "date": "2026-09-10",
+      "category": "其他",
+      "title": "PBS KIDS",
+      "summary": "美國公共電視幼兒教育平台：專家把關、零廣告無有害演算法；涵蓋 SEL 與讀寫／數學／自然遊戲，溫柔用掉螢幕時間。",
+      "basic_info": {
+        "年齡": "學齡前–小學（3–12歲）",
+        "語言": "英文（美式）",
+        "費用": "免費、零商業廣告",
+        "學科": "社交情緒、讀寫拼讀、數學、自然與工程",
+        "平台": "網站／App",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "幼兒啟蒙",
+        "情緒教育",
+        "雙語",
+        "安全螢幕時間"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "PBS KIDS",
+        "url": "https://pbskids.org/"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-014",
+      "date": "2026-09-10",
+      "category": "語文",
+      "title": "國字標準字體筆順學習網",
+      "summary": "教育部標準楷體筆順動畫。",
+      "basic_info": {
+        "年齡": "學齡前–小學（3–12歲）",
+        "語言": "繁體中文",
+        "費用": "免費",
+        "學科": "國字",
+        "平台": "網站",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "國字",
+        "筆順",
+        "教育部"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "筆順學習網",
+        "url": "https://stroke-order.learningweb.moe.edu.tw"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-10-016",
+      "date": "2026-09-10",
+      "category": "百科",
+      "title": "TED-Ed",
+      "summary": "TED 精美動畫把哲學、科學與歷史濃縮成約5分鐘：官網有 Watch➔Think➔Dig Deeper➔Discuss 探究閉環；多有繁中字幕，激發獨立思考。",
+      "basic_info": {
+        "年齡": "小學–成人（6歲以上）",
+        "語言": "英文（多有繁體中文字幕）",
+        "費用": "免費",
+        "學科": "自然數學、人文社會、批判思考與生活技能",
+        "平台": "網站／YouTube",
+        "年齡段": [
+          "小學",
+          "中學",
+          "大學",
+          "成人"
+        ]
+      },
+      "tags": [
+        "思辨",
+        "自主學習",
+        "雙語"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "TED-Ed",
+        "url": "https://ed.ted.com/"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-11-001",
+      "date": "2026-09-11",
+      "category": "語文",
+      "title": "國圖到你家｜有聲兒童繪本",
+      "summary": "國家圖書館免費有聲兒童繪本與影音：文學藝術、自然生態、科學工藝、藝術文物、人文歷史都有，免註冊就能講睡前故事。",
+      "basic_info": {
+        "年齡": "學齡前–小學（3–12歲）",
+        "語言": "繁體中文",
+        "費用": "免費（免註冊）",
+        "學科": "閱讀、繪本、跨領域",
+        "平台": "網站／App／電視盒",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "有聲繪本",
+        "兒童故事",
+        "國圖",
+        "睡前故事"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "NCLibTV 國圖到你家",
+        "url": "https://nclibtv.ncl.edu.tw/web/learning.php?id=1003&lang=zh-Hant"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-11-002",
+      "date": "2026-09-11",
+      "category": "科學",
+      "title": "NASA Space Place",
+      "summary": "NASA 免費太空科普遊戲寶庫：可愛插畫與小遊戲認識黑洞、太陽系與地球氣候，還有手作太空船 DIY；零門檻、零廣告，英文站可用瀏覽器翻譯。",
+      "basic_info": {
+        "年齡": "學齡前–小學（3–12歲）",
+        "語言": "英文（可瀏覽器翻譯成中文）",
+        "費用": "免費、零廣告",
+        "學科": "天文、地球科學、太空科技",
+        "平台": "網站",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "太空",
+        "NASA",
+        "手作DIY"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "NASA Space Place",
+        "url": "https://spaceplace.nasa.gov"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-11-003",
+      "date": "2026-09-11",
+      "category": "語文",
+      "title": "Google Read Along",
+      "summary": "孩子把故事念給閱讀夥伴 Diya 聽，即時鼓勵與協助、不打斷；可下載離線，適合英語朗讀練習。首次需開麥克風，建議家長陪同選故事與練習時間。",
+      "basic_info": {
+        "年齡": "學齡前–小學（3–12歲）",
+        "語言": "英語為主（及其他支援語言）",
+        "費用": "免費",
+        "學科": "英語朗讀、閱讀",
+        "平台": "網站／Android",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "英語朗讀",
+        "AI陪伴"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Google Read Along",
+        "url": "https://readalong.google.com/"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-12-001",
+      "date": "2026-09-12",
+      "category": "語文",
+      "title": "Cool English 酷英網",
+      "summary": "教育部委託臺師大打造的免費英語站：聽讀寫說到會考／學測都有，AI 跟讀評分、寫作批改與闖關練習；零廣告，登入就能用。",
+      "basic_info": {
+        "年齡": "小學–大學（6歲以上）",
+        "語言": "繁體中文介面、英語學習",
+        "費用": "免費、零廣告",
+        "學科": "英語聽讀寫說、會考／學測／英聽",
+        "平台": "網站",
+        "年齡段": [
+          "小學",
+          "中學",
+          "大學"
+        ]
+      },
+      "tags": [
+        "雙語",
+        "自主學習",
+        "英語自學",
+        "台灣"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Cool English 酷英網",
+        "url": "https://www.coolenglish.edu.tw/"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-12-002",
+      "date": "2026-09-12",
+      "category": "語文",
+      "title": "Storyline Online",
+      "summary": "美國演員工會基金會兒童繪本庫：好萊塢演員朗讀、原書插畫動態化與配樂；每本附教育引導，適合床邊故事與英語聽力。",
+      "basic_info": {
+        "年齡": "學齡前–小學（3–12歲）",
+        "語言": "英文（美式發音）",
+        "費用": "免費",
+        "學科": "英語聽讀、繪本、情緒與價值觀",
+        "平台": "網站",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "英語朗讀",
+        "有聲繪本",
+        "雙語",
+        "睡前故事"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Storyline Online",
+        "url": "https://storylineonline.net/"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-13-001",
+      "date": "2026-09-13",
+      "category": "數學",
+      "title": "GeoGebra",
+      "summary": "數學動態視覺化：算式與圖形雙向連動，拖拉頂點參數跟著變；從國小幾何到高中微積分與 3D，免費無廣告，也可直接用全球教師現成課件。",
+      "basic_info": {
+        "年齡": "小學–大學（6歲以上）",
+        "語言": "有多語介面",
+        "費用": "100% 免費、無廣告",
+        "學科": "幾何、代數、函數、統計、3D 向量、微積分",
+        "平台": "網站／App",
+        "年齡段": [
+          "小學",
+          "中學",
+          "大學"
+        ]
+      },
+      "tags": [
+        "數學",
+        "自主學習",
+        "動態視覺",
+        "STEM"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "GeoGebra",
+        "url": "https://www.geogebra.org/"
+      },
+      "status": "offline",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-14-001",
+      "date": "2026-09-14",
+      "category": "百科",
+      "title": "臺大開放式課程",
+      "summary": "臺大課堂實況上網：完全免費、免註冊、無廣告；整學期錄影加教材，適合高中先修與跨領域自學。",
+      "basic_info": {
+        "年齡": "中學–成人（13歲以上）",
+        "語言": "繁體中文",
+        "費用": "完全免費、免註冊、無廣告",
+        "學科": "文史哲、理工資工、商管法律、大學先修",
+        "平台": "網站",
+        "年齡段": [
+          "中學",
+          "大學",
+          "成人"
+        ]
+      },
+      "tags": [
+        "自主學習",
+        "大學先修",
+        "台灣"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "臺大開放式課程",
+        "url": "https://ocw.aca.ntu.edu.tw/"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-09-15-001",
+      "date": "2026-09-15",
+      "kind": "thought",
+      "category": "其他",
+      "title": "哈佛發展中兒童中心談韌性",
+      "summary": "孩子需要的，是穩定的大人關係，還有一點自己能掌控的空間。不是一直被誇聰明。",
+      "content": "哈佛發展中兒童中心談韌性，有一句我很有感：孩子需要的，是穩定的大人關係，還有一點自己能掌控的空間。不是一直被誇聰明。\n\n哈佛研究來源：https://developingchild.harvard.edu/resources/working-paper/supportive-relationships-and-active-skill-building-strengthen-the-foundations-of-resilience/\n\n「為什麼有些孩子能健康長大、逆風翻盤」的答案:\n\n💡💡💡 關鍵 1：逆境中最大的保護傘，是「至少一位穩定的成年人」\n\n報告指出，幾十年來研究中最一致的發現就是：困境中依舊發展良好的孩子，身邊幾乎都至少有一位穩定、充滿關懷且能及時給予回應的成人（父母、照顧者、老師或親友）。\n\n當孩子遇到挫折時，身體會啟動壓力反應系統。如果有大人陪著他、接住他的情緒，這場壓力就會變成「可耐受的挑戰」，促進大腦成熟；但如果長期缺乏支持，壓力就會變成損害大腦與免疫系統的「毒性壓力（toxic stress）」。\n\n👉👉👉 你的陪伴與回應，就是孩子生理與心理最堅固的避震器。\n\n關鍵 2：發展像「天秤」，支點是可以移動的\n\n哈佛學者用「蹺蹺板／天平」來形容孩子的成長：一邊是壓力與負面事件，另一邊是保護性經驗與技能。\n\n中間的「支點」代表先天的基因與氣質。有些孩子天生比較敏感、有些比較大而化之。\n\n最振奮人心的是：支點的位置並不是一成不變的！\n\n透過後天練習「自我調節、情緒管理、規劃與解決問題」等執行功能技能，天平的支點會逐漸往好的方向滑動，讓孩子未來遇到風浪時，更容易倒向正向的結果。\n\n關鍵 3：打破迷思 - 別把挫敗全怪在「孩子不夠堅強」\n\n報告特別澄清了常見的迷思：\n\n❌ 「吃得苦中苦，方為人上人」：純粹的苦難並不會自動讓人堅強；極端且缺乏支持的壓力，只會留下創傷與慢性發炎。\n\n❌ 「堅強是一種個性」：沒有所謂的「韌性基因」。孩子的抗壓性，是天生特質與後天人際支持、環境互動出來的成果。\n\n❌ 「在學校勇敢，在家也應該堅強」：韌性具有情境特殊性，孩子\n可能很擅長應對同儕摩擦，但面對家庭衝突卻容易崩潰，這非常正常，需要我們分開理解與支持。",
+      "tags": [
+        "韌性",
+        "教養",
+        "親子",
+        "哈佛"
+      ],
+      "source": {
+        "channel": "研究來源",
+        "name": "Harvard Center on the Developing Child",
+        "url": "https://developingchild.harvard.edu/resources/working-paper/supportive-relationships-and-active-skill-building-strengthen-the-foundations-of-resilience/"
+      },
+      "status": "recommended"
+    }
+  ]
+}
