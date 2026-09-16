@@ -22,7 +22,7 @@ function paragraphs(text) {
       if (/^「[^」]+」$/.test(p.trim())) {
         return '<p class="thought-lead">' + html + "</p>";
       }
-      if (/^關鍵\s*\d+/.test(p.trim()) || /^\d+\.\s/.test(p.trim()) || /^簡單來說/.test(p.trim())) {
+      if (/^關鍵\s*\d+/.test(p.trim()) || /^\d+\.\s/.test(p.trim()) || /^簡單來說/.test(p.trim()) || /^[📌✅]\s/.test(p.trim())) {
         return '<p class="thought-key"><strong>' + html + "</strong></p>";
       }
       return "<p>" + html + "</p>";
@@ -31,7 +31,7 @@ function paragraphs(text) {
 var params = new URLSearchParams(window.location.search);
 var id = params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-fetch("data.json?v=20260916i")
+fetch("data.json?v=20260916j")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     var entries = (d && d.entries) || [];
