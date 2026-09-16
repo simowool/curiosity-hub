@@ -131,7 +131,7 @@ function render() {
         if (e.source.url) src += ' · <a href="' + esc(e.source.url) + '" target="_blank" rel="noopener">開啟</a>';
         src += "</div>";
       }
-      const more = isThought(e) ? '<p class="more"><a href="a/' + encodeURIComponent(e.id) + '.html">閱讀全文</a></p>' : "";
+      const more = isThought(e) ? '<p class="more"><a href="article.html?id=' + encodeURIComponent(e.id) + '">閱讀全文</a></p>' : "";
       const el = document.createElement("article");
       el.className = "card";
       el.innerHTML = '<div class="card-top">' + badgeHtml(e) + '<h2 class="title">' + esc(e.title || "未命名") + '</h2><span class="date">' + esc(e.date || "") + "</span></div>" + (e.summary ? '<p class="summary">' + esc(e.summary) + "</p>" : "") + more + (facts ? '<div class="facts">' + facts + "</div>" : "") + (tagHtml ? '<div class="tags">' + tagHtml + "</div>" : "") + src;
@@ -148,7 +148,7 @@ function esc(s) {
     return String.fromCharCode(38, 35) + n + String.fromCharCode(59);
   });
 }
-fetch("data.json?v=20260916a")
+fetch("data.json?v=20260916b")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     DATA = d && typeof d === "object" ? d : { meta: {}, entries: [] };
