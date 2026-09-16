@@ -5,7 +5,7 @@ let kind = "site";
 let chipSignature = "";
 const KIND_OPTS = [
   { id: "site", label: "網站" },
-  { id: "thought", label: "想想" }
+  { id: "thought", label: "好奇想想" }
 ];
 const AGE_OPTS = [
   { id: "全部", label: "全部" },
@@ -54,6 +54,15 @@ function bandsOf(e) {
   const info = e.basic_info || {};
   if (Array.isArray(info["年齡段"]) && info["年齡段"].length) return info["年齡段"];
   return [];
+}
+function openSitePopup(url) {
+  if (!url) return;
+  var w = Math.min(1100, Math.floor(window.screen.availWidth * 0.9));
+  var h = Math.min(800, Math.floor(window.screen.availHeight * 0.85));
+  var left = Math.max(0, Math.floor((window.screen.availWidth - w) / 2));
+  var top = Math.max(0, Math.floor((window.screen.availHeight - h) / 2));
+  var win = window.open(url, "curiosity-site", "popup=yes,noopener,noreferrer,width=" + w + ",height=" + h + ",left=" + left + ",top=" + top);
+  if (!win) window.open(url, "_blank", "noopener,noreferrer");
 }
 function buildKindChips() {
   if (!kindsEl) return;
@@ -110,9 +119,18 @@ function buildChips(force) {
   buildAgeChips();
 }
 function badgeHtml(e) {
-  if (isThought(e)) return '<span class="badge 想想">想想</span>';
+  if (isThought(e)) return '<span class="badge 想想">好奇想想</span>';
   const cat = e.category || "其他";
   return '<span class="badge-path"><span class="path-kind">網站</span><span class="path-sep">›</span><span class="badge ' + esc(cat) + '">' + esc(cat) + "</span></span>";
+}
+function titleHtml(e) {
+  const name = esc(e.title || "未命名");
+  if (isThought(e)) {
+    return '<h2 class="title"><a href="article.html?id=' + encodeURIComponent(e.id) + '">' + name + "</a></h2>";
+  }
+  const url = e.source && e.source.url ? e.source.url : "";
+  if (!url) return '<h2 class="title">' + name + "</h2>";
+  return '<h2 class="title"><a class="site-pop" href="' + esc(url) + '" target="_blank" rel="noopener">' + name + "</a></h2>";
 }
 function render() {
   try {
@@ -132,7 +150,7 @@ function render() {
     const list = document.getElementById("list");
     list.innerHTML = "";
     if (!items.length) {
-      list.innerHTML = '<div class="empty"><h2>還沒有符合的內容</h2><p>把網站或想想丟到 Grok，或改一下搜尋與標籤。</p></div>';
+      list.innerHTML = '<div class="empty"><h2>還沒有符合的內容</h2><p>把網站或好奇想想丟到 Grok，或改一下搜尋與標籤。</p></div>';
       return;
     }
     items.forEach((e) => {
@@ -148,10 +166,17 @@ function render() {
       const more = isThought(e) ? '<p class="more"><a href="article.html?id=' + encodeURIComponent(e.id) + '">閱讀全文</a></p>' : "";
       const el = document.createElement("article");
       el.className = "card";
-      el.innerHTML = '<div class="card-top">' + badgeHtml(e) + '<h2 class="title">' + esc(e.title || "未命名") + '</h2><span class="date">' + esc(e.date || "") + "</span></div>" + (e.summary ? '<p class="summary">' + esc(e.summary) + "</p>" : "") + more + (facts ? '<div class="facts">' + facts + "</div>" : "") + (tagHtml ? '<div class="tags">' + tagHtml + "</div>" : "") + src;
+      el.innerHTML = '<div class="card-top">' + badgeHtml(e) + titleHtml(e) + '<span class="date">' + esc(e.date || "") + "</span></div>" + (e.summary ? '<p class="summary">' + esc(e.summary) + "</p>" : "") + more + (facts ? '<div class="facts">' + facts + "</div>" : "") + (tagHtml ? '<div class="tags">' + tagHtml + "</div>" : "") + src;
       el.querySelectorAll("button.tag").forEach((btn) => {
         btn.addEventListener("click", () => { activeTag = btn.getAttribute("data-tag") || "全部"; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
       });
+      const pop = el.querySelector("a.site-pop");
+      if (pop) {
+        pop.addEventListener("click", (ev) => {
+          ev.preventDefault();
+          openSitePopup(pop.getAttribute("href"));
+        });
+      }
       list.appendChild(el);
     });
   } catch (err) { console.error("curiosity-hub render failed", err); }
@@ -162,7 +187,7 @@ function esc(s) {
     return String.fromCharCode(38, 35) + n + String.fromCharCode(59);
   });
 }
-fetch("data.json?v=20260916f")
+fetch("data.json?v=20260916g")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     DATA = d && typeof d === "object" ? d : { meta: {}, entries: [] };
