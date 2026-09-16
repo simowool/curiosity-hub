@@ -20,19 +20,17 @@ const ageChips = document.getElementById("ages");
 const kindsEl = document.getElementById("kinds");
 const ageRow = document.getElementById("ageRow");
 document.getElementById("q").addEventListener("input", render);
-(function readKindFromUrl() {
-  try {
-    var k = new URLSearchParams(window.location.search).get("kind");
-    if (k === "thought" || k === "paper") kind = "thought";
-    else if (k === "site") kind = "site";
-  } catch (e) {}
-})();
-function syncKindUrl() {
+try {
+  if (sessionStorage.getItem("hubKind") === "thought") kind = "thought";
+} catch (e) {}
+function saveKind() {
+  try { sessionStorage.setItem("hubKind", kind); } catch (e) {}
   try {
     var u = new URL(window.location.href);
-    if (kind === "thought") u.searchParams.set("kind", "thought");
-    else u.searchParams.delete("kind");
-    history.replaceState(null, "", u.pathname + u.search + u.hash);
+    if (u.searchParams.has("kind")) {
+      u.searchParams.delete("kind");
+      history.replaceState(null, "", u.pathname + u.hash);
+    }
   } catch (e) {}
 }
 function kindOf(e) { return e.kind || "site"; }
@@ -69,7 +67,7 @@ function buildKindChips() {
       kind = opt.id;
       activeTag = "全部";
       chipSignature = "";
-      syncKindUrl();
+      saveKind();
       render();
     });
     kindsEl.appendChild(b);
@@ -164,12 +162,12 @@ function esc(s) {
     return String.fromCharCode(38, 35) + n + String.fromCharCode(59);
   });
 }
-fetch("data.json?v=20260916e")
+fetch("data.json?v=20260916f")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     DATA = d && typeof d === "object" ? d : { meta: {}, entries: [] };
     if (!Array.isArray(DATA.entries)) DATA.entries = [];
-    syncKindUrl();
+    saveKind();
     buildChips(true); render();
   })
   .catch(function (err) { console.error("curiosity-hub data load failed", err); render(); });
