@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-09-16T04:15:03Z",
+    "updated": "2026-09-16T04:27:42Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -126,7 +126,7 @@
         "name": "Scratch",
         "url": "https://scratch.mit.edu/"
       },
-      "status": "recommended",
+      "status": "offline",
       "kind": "site"
     },
     {
@@ -407,7 +407,7 @@
         "name": "TED-Ed",
         "url": "https://ed.ted.com/"
       },
-      "status": "offline",
+      "status": "recommended",
       "kind": "site"
     },
     {
