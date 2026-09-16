@@ -1,3 +1,4 @@
+try { sessionStorage.setItem("hubKind", "thought"); } catch (e) {}
 function esc(s) {
   return String(s).replace(/[&<>"']/g, function (ch) {
     var n = { "&": 38, "<": 60, ">": 62, '"': 34, "'": 39 }[ch];
@@ -25,7 +26,7 @@ function paragraphs(text) {
 var params = new URLSearchParams(window.location.search);
 var id = params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-fetch("data.json?v=20260916e")
+fetch("data.json?v=20260916f")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     var entries = (d && d.entries) || [];
