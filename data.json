@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-09-16T16:44:51Z",
+    "updated": "2026-09-16T23:02:07Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -666,6 +666,27 @@
         "channel": "研究來源",
         "name": "Working Paper 13 · Center on the Developing Child at Harvard University",
         "url": "https://developingchild.harvard.edu/resources/working-paper/supportive-relationships-and-active-skill-building-strengthen-the-foundations-of-resilience/"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-16-001",
+      "date": "2026-09-16",
+      "kind": "thought",
+      "category": "其他",
+      "title": "AI時代育兒：未來的世界，不再需要「乖乖等指示」的孩子。",
+      "summary": "看完李飛飛與 MasterClass 執行長的對話：職場變「槓鈴結構」，別再把孩子往中間層推；主動性與物理手感才是資產。",
+      "content": "看完人工智能專家 李飛飛 博士與 MasterClass 執行長 David Rogier 的深度對話，身為家長，內心被深深震撼。\n\n李飛飛提到，未來的職場是殘酷的「槓鈴結構」（兩頭重、中間空）：\n\n📌 中間標準化、照表操課的白領，正在快速消失。\n\n📌 站在兩端的，要嘛是「無可替代感知的頂級專才」，要嘛是「懂得指揮 AI 解決問題的超級通才」。\n\n如果今天還在鼓勵孩子死背答案、狂刷考古題換分數，其實是在把孩子往最危險的「中間層」推。\n\n在 AI 時代，我們能給孩子最珍貴的兩份資產：\n\n✅ 主動性：別再直接給孩子答案。讓他學會定義問題，把 AI 當外腦，自己動手把一個小專案（如家庭旅行規劃、手作小裝置）從頭到尾做出來。\n\n✅ 物理手感：演算法再強，也感受不到重力與材料的質地。走出螢幕，去泥土裡翻滾、去拆解電路、去廚房掌勺，真實世界的物理反饋，才是無可取代的手藝底蘊。\n\n✅ 未來的關鍵，從來不是「懂多少知識」，而是「能不能把想法做出來」。\n\n你會讓孩子接觸 AI 嗎？還是更著重實體體驗？歡迎一起在留言區聊聊你的看法！",
+      "tags": [
+        "AI",
+        "育兒",
+        "主動性",
+        "親職教育"
+      ],
+      "source": {
+        "channel": "影音來源",
+        "name": "李飛飛 × David Rogier · MasterClass 對話",
+        "url": "https://www.youtube.com/watch?v=subu-xHrp1w&t=672s"
       },
       "status": "recommended"
     }
