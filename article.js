@@ -11,12 +11,21 @@ function kindLabel(k) {
 }
 function paragraphs(text) {
   return String(text || "").split(/\n{2,}/).map(function (p) { return p.trim(); }).filter(Boolean)
-    .map(function (p) { return "<p>" + esc(p).replace(/\n/g, "<br>") + "</p>"; }).join("");
+    .map(function (p) {
+      var html = esc(p).replace(/\n/g, "<br>");
+      if (/^「[^」]+」$/.test(p.trim())) {
+        return '<p class="thought-lead">' + html + "</p>";
+      }
+      if (/^關鍵\s*\d+/.test(p.trim())) {
+        return '<p class="thought-key"><strong>' + html + "</strong></p>";
+      }
+      return "<p>" + html + "</p>";
+    }).join("");
 }
 var params = new URLSearchParams(window.location.search);
 var id = params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-fetch("data.json?v=20260916b")
+fetch("data.json?v=20260916c")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     var entries = (d && d.entries) || [];
