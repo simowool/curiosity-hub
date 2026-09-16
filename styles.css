@@ -19,7 +19,7 @@
 html, body { margin: 0; padding: 0; }
 html { color-scheme: dark; }
 body {
-  font-family: "Iowan Old Style", "Palatino Linotype", "Songti TC", "Noto Serif TC", "PMingLiU", serif;
+  font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif;
   background: radial-gradient(1200px 600px at 10% -10%, #1e3a4c 0%, transparent 55%), var(--bg);
   color: var(--ink);
   min-height: 100vh;
@@ -28,17 +28,17 @@ body {
 header { margin-bottom: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .brand { min-width: 0; flex: 0 1 auto; }
 .partner-wrap { margin-left: auto; min-width: 280px; max-width: 420px; }
-.partner-kicker { display: block; font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 11px; color: var(--muted); letter-spacing: 0.04em; margin: 0 0 6px 2px; }
+.partner-kicker { display: block; font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; font-size: 11px; color: var(--muted); letter-spacing: 0.04em; margin: 0 0 6px 2px; }
 .partner { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); background: #132033; border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; }
-.partner-name { font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 18px; font-weight: 700; color: #7dd3fc; white-space: nowrap; }
-.partner-copy { font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 13px; color: var(--muted); line-height: 1.45; }
+.partner-name { font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; font-size: 18px; font-weight: 700; color: #7dd3fc; white-space: nowrap; }
+.partner-copy { font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; font-size: 13px; color: var(--muted); line-height: 1.45; }
 .partner-copy strong { display: block; color: var(--ink); font-weight: 600; font-size: 14px; }
 .partner:hover { border-color: var(--accent); }
-.social { display: inline-block; font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 13px; color: var(--accent); text-decoration: none; border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 7px 12px; white-space: nowrap; margin-top: 12px; }
-.kicker { letter-spacing: 0.22em; text-transform: uppercase; font-size: 12px; color: var(--accent); font-family: "Avenir Next", "PingFang TC", sans-serif; margin-bottom: 8px; }
+.social { display: inline-block; font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; font-size: 13px; color: var(--accent); text-decoration: none; border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 7px 12px; white-space: nowrap; margin-top: 12px; }
+.kicker { letter-spacing: 0.22em; text-transform: uppercase; font-size: 12px; color: var(--accent); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; margin-bottom: 8px; }
 h1 { font-size: 42px; font-weight: 600; margin: 0 0 8px; letter-spacing: 0.06em; }
 .subtitle { color: var(--muted); font-size: 16px; line-height: 1.6; margin: 0; }
-.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 28px 0 18px; font-family: "Avenir Next", "PingFang TC", sans-serif; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 28px 0 18px; font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; }
 .search { flex: 1 1 240px; border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 10px 16px; font-size: 14px; color: var(--ink); outline: none; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; flex: 1 1 100%; }
 .chip { border: 1px solid var(--line); background: var(--paper); color: var(--muted); border-radius: 999px; padding: 7px 12px; font-size: 13px; cursor: pointer; }
@@ -58,9 +58,9 @@ h1 { font-size: 42px; font-weight: 600; margin: 0 0 8px; letter-spacing: 0.06em;
 .card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 16px; min-width: 0; }
 .card-top { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
 .badge-path { display: inline-flex; align-items: center; gap: 6px; }
-.path-kind { font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 11px; color: var(--muted); letter-spacing: 0.04em; }
+.path-kind { font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; font-size: 11px; color: var(--muted); letter-spacing: 0.04em; }
 .path-sep { color: var(--line); font-size: 12px; }
-.badge { font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 12px; padding: 3px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.badge { font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; font-size: 12px; padding: 3px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
 .badge.科學 { background: #164e63; color: var(--科學); }
 .badge.數學 { background: #1e3a5f; color: var(--數學); }
 .badge.語文 { background: #163a4d; color: var(--語文); }
@@ -73,28 +73,22 @@ h1 { font-size: 42px; font-weight: 600; margin: 0 0 8px; letter-spacing: 0.06em;
 .title { font-size: 18px; margin: 0; flex: 1 1 100%; }
 .title a { color: inherit; text-decoration: none; }
 .title a:hover { color: var(--accent); }
-.date { color: var(--muted); font-size: 13px; font-family: "Avenir Next", "PingFang TC", sans-serif; }
+.date { color: var(--muted); font-size: 13px; font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; }
 .summary { margin: 10px 0 0; line-height: 1.65; font-size: 14.5px; }
-.more { margin: 10px 0 0; font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 13px; }
+.more { margin: 10px 0 0; font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; font-size: 13px; }
 .more a { color: var(--accent); text-decoration: none; }
-.facts { margin-top: 12px; display: grid; gap: 6px; font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 13.5px; }
+.facts { margin-top: 12px; display: grid; gap: 6px; font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; font-size: 13.5px; }
 .facts div { display: grid; grid-template-columns: 48px 1fr; gap: 8px; }
 .facts b { color: var(--muted); font-weight: 500; }
 .tags { margin-top: 12px; display: flex; gap: 6px; flex-wrap: wrap; }
-.tag { font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 8px; font-family: "Avenir Next", "PingFang TC", sans-serif; background: transparent; cursor: pointer; }
+.tag { font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 8px; font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; background: transparent; cursor: pointer; }
 .source { margin-top: 12px; font-size: 13px; color: var(--muted); }
 .source a { color: var(--accent); text-decoration: none; }
 .empty { grid-column: 1 / -1; background: var(--paper); border: 1px dashed var(--line); border-radius: 16px; padding: 36px 24px; text-align: center; }
 footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
 footer a { color: var(--accent); text-decoration: none; }
 .reader-wrap { max-width: 680px; padding-top: 8px; }
-.reader-wrap, .reader, .article-body {
-  font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif;
-}
-.reader h1, .article-body .thought-lead, .article-body .thought-key {
-  font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif;
-}
-.back { margin: 0 0 18px; font-family: "Avenir Next", "PingFang TC", sans-serif; font-size: 14px; }
+.back { margin: 0 0 18px; font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; font-size: 14px; }
 .back a { color: var(--accent); text-decoration: none; }
 .reader h1 { font-size: 30px; line-height: 1.4; margin: 12px 0 20px; letter-spacing: 0.02em; font-weight: 600; }
 .article-body { font-size: 17.5px; line-height: 1.95; margin-top: 8px; letter-spacing: 0.02em; color: #e8eef6; }
