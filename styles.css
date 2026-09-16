@@ -91,3 +91,16 @@ footer a { color: var(--accent); text-decoration: none; }
 .reader h1 { font-size: 32px; line-height: 1.35; margin: 10px 0 18px; letter-spacing: 0.03em; }
 .article-body { font-size: 18px; line-height: 1.85; margin-top: 22px; }
 .article-body p { margin: 0 0 1.15em; }
+
+.article-body .thought-lead {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 1.1em 0 0.75em;
+}
+.article-body .thought-key {
+  margin: 1.25em 0 0.5em;
+}
+.article-body .thought-key strong {
+  font-weight: 700;
+}
