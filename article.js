@@ -16,7 +16,7 @@ function paragraphs(text) {
 var params = new URLSearchParams(window.location.search);
 var id = params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-fetch("data.json?v=20260915f")
+fetch("data.json?v=20260916b")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     var entries = (d && d.entries) || [];
