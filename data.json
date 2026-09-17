@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-09-16T23:02:07Z",
+    "updated": "2026-09-17T04:19:10Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -96,7 +96,7 @@
         "name": "均一教育平台",
         "url": "https://www.junyiacademy.org/"
       },
-      "status": "recommended",
+      "status": "offline",
       "kind": "site"
     },
     {
@@ -126,7 +126,7 @@
         "name": "Scratch",
         "url": "https://scratch.mit.edu/"
       },
-      "status": "offline",
+      "status": "recommended",
       "kind": "site"
     },
     {
@@ -438,7 +438,7 @@
         "name": "NCLibTV 國圖到你家",
         "url": "https://nclibtv.ncl.edu.tw/web/learning.php?id=1003&lang=zh-Hant"
       },
-      "status": "recommended",
+      "status": "offline",
       "kind": "site"
     },
     {
