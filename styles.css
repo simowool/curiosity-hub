@@ -99,7 +99,20 @@ footer a { color: var(--accent); text-decoration: none; }
 .reader-wrap { max-width: 680px; padding-top: 8px; }
 .back { margin: 0 0 18px; font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; font-size: 14px; }
 .back a { color: var(--accent); text-decoration: none; }
-.reader h1 { font-size: 30px; line-height: 1.4; margin: 12px 0 20px; letter-spacing: 0.02em; font-weight: 600; }
+.reader h1 { font-size: 30px; line-height: 1.4; margin: 12px 0 10px; letter-spacing: 0.02em; font-weight: 600; }
+.share-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
+.share-btn {
+  font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  color: var(--accent);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.share-btn:hover { border-color: var(--accent); }
+.share-btn.done { color: #6ee7b7; border-color: #14532d; }
 .article-body { font-size: 17.5px; line-height: 1.95; margin-top: 8px; letter-spacing: 0.02em; color: #e8eef6; }
 .article-body p { margin: 0 0 1.35em; }
 .article-body .thought-lead {
