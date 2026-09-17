@@ -25,13 +25,19 @@ function paragraphs(text) {
       if (/^關鍵\s*\d+/.test(p.trim()) || /^\d+\.\s/.test(p.trim()) || /^簡單來說/.test(p.trim()) || /^[📌✅]\s/.test(p.trim())) {
         return '<p class="thought-key"><strong>' + html + "</strong></p>";
       }
+      // short section headings (no period-ending long prose)
+      if (p.length <= 40 && !/[。！？]$/.test(p) && !/^親愛的/.test(p) && !/^誠摯地/.test(p) && !/^20\d{2}/.test(p) && !/^Sally |^Melissa |^Anantha |^Roger /.test(p)) {
+        if (/臨時委員會$|實務支持$|共享文化$|研究事業中的 AI$|一起做$|^AI 與教育/.test(p)) {
+          return '<p class="thought-key"><strong>' + html + "</strong></p>";
+        }
+      }
       return "<p>" + html + "</p>";
     }).join("");
 }
 var params = new URLSearchParams(window.location.search);
 var id = params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-fetch("data.json?v=20260917a")
+fetch("data.json?v=20260917b")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     var entries = (d && d.entries) || [];
