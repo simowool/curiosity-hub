@@ -11,7 +11,10 @@ function kindLabel(k) {
 }
 function linkify(escaped) {
   return escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function (full, label, href) {
-    if (!/^(https?:\/\/|\/|article\.html)/i.test(href)) return full;
+    if (!/^(https?:\/\/|\/|article\.html|a\/)/i.test(href)) return full;
+    if (/article\.html\?id=([^)&]+)/.test(href)) {
+      href = "a/" + decodeURIComponent(RegExp.$1) + ".html";
+    }
     return '<a href="' + href + '">' + label + "</a>";
   });
 }
@@ -86,16 +89,21 @@ function bindShare(title) {
   }
 }
 var params = new URLSearchParams(window.location.search);
-var id = params.get("id") || (window.location.hash || "").replace(/^#/, "");
+var pathMatch = (window.location.pathname || "").match(/\/a\/([^/]+)\.html$/);
+var inArticleDir = !!pathMatch;
+var id = (pathMatch && decodeURIComponent(pathMatch[1])) || params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-fetch("data.json?v=20260918a")
+var dataFile = inArticleDir ? "../data.json?v=20260918b" : "data.json?v=20260918b";
+var homeHref = inArticleDir ? "../" : "./";
+if (box) {
+fetch(dataFile)
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     var entries = (d && d.entries) || [];
     var e = entries.filter(function (x) { return x.id === id; })[0];
     if (!e) {
       document.title = "找不到內容 · 好奇學學";
-      box.innerHTML = "<h1>找不到這篇</h1><p>可能已下架或網址不完整。<a href=\"./\">回列表</a></p>";
+      box.innerHTML = "<h1>找不到這篇</h1><p>可能已下架或網址不完整。<a href=\"" + homeHref + "\">回列表</a></p>";
       return;
     }
     var k = e.kind || "site";
@@ -128,5 +136,6 @@ fetch("data.json?v=20260918a")
     bindShare(title);
   })
   .catch(function () {
-    box.innerHTML = "<h1>讀不到資料</h1><p><a href=\"./\">回列表</a></p>";
+    box.innerHTML = "<h1>讀不到資料</h1><p><a href=\"" + homeHref + "\">回列表</a></p>";
   });
+}
