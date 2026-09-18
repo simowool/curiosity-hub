@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-09-18T04:35:00Z",
+    "updated": "2026-09-18T14:11:57Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -708,6 +708,37 @@
         "channel": "原文",
         "name": "Sally Kornbluth · MIT Organization Chart",
         "url": "https://orgchart.mit.edu/letters/ai-and-education-watershed-moment-mit"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-18-001",
+      "date": "2026-09-18",
+      "kind": "site",
+      "category": "其他",
+      "title": "Blocks Universe",
+      "summary": "BBC CBeebies 幼兒教育 IP（原 Learningblocks）：Numberblocks／Alphablocks 把數學與 Phonics 做成可看懂的動畫，對標英國 EYFS，官網還有免費學習單可列印。",
+      "basic_info": {
+        "年齡": "約3–7歲",
+        "語言": "英文（英式發音）",
+        "費用": "影片與學習單免費使用為主",
+        "學科": "幼兒數學、自然發音 Phonics",
+        "平台": "網站",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "幼兒啟蒙",
+        "雙語",
+        "數學",
+        "自然發音"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Blocks Universe",
+        "url": "https://www.blocksuniverse.tv"
       },
       "status": "recommended"
     }
