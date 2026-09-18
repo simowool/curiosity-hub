@@ -36,6 +36,7 @@ function saveKind() {
 function kindOf(e) { return e.kind || "site"; }
 function isThought(e) { const k = kindOf(e); return k === "thought" || k === "paper"; }
 function inKind(e) { return kind === "thought" ? isThought(e) : kindOf(e) === "site"; }
+function articleHref(e) { return "a/" + encodeURIComponent(e.id) + ".html"; }
 function liveEntries(entries) {
   return (entries || []).filter((e) => (e.status || "recommended") !== "offline");
 }
@@ -56,7 +57,7 @@ function bandsOf(e) {
   return [];
 }
 function openSitePopup(url) {
-  if (!url) return;
+  if (!url || !/^https?:\/\//i.test(url)) return;
   var w = Math.min(1100, Math.floor(window.screen.availWidth * 0.9));
   var h = Math.min(800, Math.floor(window.screen.availHeight * 0.85));
   var left = Math.max(0, Math.floor((window.screen.availWidth - w) / 2));
@@ -126,7 +127,7 @@ function badgeHtml(e) {
 function titleHtml(e) {
   const name = esc(e.title || "未命名");
   if (isThought(e)) {
-    return '<h2 class="title"><a href="article.html?id=' + encodeURIComponent(e.id) + '">' + name + "</a></h2>";
+    return '<h2 class="title"><a href="' + articleHref(e) + '">' + name + "</a></h2>";
   }
   const url = e.source && e.source.url ? e.source.url : "";
   if (!url) return '<h2 class="title">' + name + "</h2>";
@@ -163,7 +164,7 @@ function render() {
         if (e.source.url) src += ' · <a href="' + esc(e.source.url) + '" target="_blank" rel="noopener">開啟</a>';
         src += "</div>";
       }
-      const more = isThought(e) ? '<p class="more"><a href="article.html?id=' + encodeURIComponent(e.id) + '">閱讀全文</a></p>' : "";
+      const more = isThought(e) ? '<p class="more"><a href="' + articleHref(e) + '">閱讀全文</a></p>' : "";
       const el = document.createElement("article");
       el.className = "card";
       el.innerHTML = '<div class="card-top">' + badgeHtml(e) + titleHtml(e) + '<span class="date">' + esc(e.date || "") + "</span></div>" + (e.summary ? '<p class="summary">' + esc(e.summary) + "</p>" : "") + more + (facts ? '<div class="facts">' + facts + "</div>" : "") + (tagHtml ? '<div class="tags">' + tagHtml + "</div>" : "") + src;
@@ -187,7 +188,7 @@ function esc(s) {
     return String.fromCharCode(38, 35) + n + String.fromCharCode(59);
   });
 }
-fetch("data.json?v=20260918a")
+fetch("data.json?v=20260918b")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     DATA = d && typeof d === "object" ? d : { meta: {}, entries: [] };
