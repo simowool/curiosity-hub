@@ -25,4 +25,5 @@ export default async () => {
 
 export const config = {
   path: "/og.jpg",
+  preferStatic: true,
 };
