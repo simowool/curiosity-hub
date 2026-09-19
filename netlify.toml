@@ -1,0 +1,16 @@
+[build]
+  publish = "."
+  command = "true"
+
+[functions]
+  directory = "netlify/functions"
+
+[[headers]]
+  for = "/data.json"
+  [headers.values]
+    Cache-Control = "public, max-age=60"
+
+[[headers]]
+  for = "/app.js"
+  [headers.values]
+    Cache-Control = "public, max-age=60"
