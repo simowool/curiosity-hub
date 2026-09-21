@@ -11,10 +11,7 @@ function kindLabel(k) {
 }
 function linkify(escaped) {
   return escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function (full, label, href) {
-    if (!/^(https?:\/\/|\/|article\.html|a\/)/i.test(href)) return full;
-    if (/article\.html\?id=([^)&]+)/.test(href)) {
-      href = "a/" + decodeURIComponent(RegExp.$1) + ".html";
-    }
+    if (!/^(https?:\/\/|\/|article\.html)/i.test(href)) return full;
     return '<a href="' + href + '">' + label + "</a>";
   });
 }
@@ -26,6 +23,9 @@ function paragraphs(text) {
         return '<p class="thought-lead">' + html + "</p>";
       }
       if (/^關鍵\s*\d+/.test(p.trim()) || /^\d+\.\s/.test(p.trim()) || /^簡單來說/.test(p.trim()) || /^[📌✅]\s/.test(p.trim())) {
+        return '<p class="thought-key"><strong>' + html + "</strong></p>";
+      }
+      if (/^[一二三四五六七八九十]+、/.test(p.trim()) || /^結語[：:]/.test(p.trim())) {
         return '<p class="thought-key"><strong>' + html + "</strong></p>";
       }
       if (p.length <= 40 && !/[。！？]$/.test(p) && !/^親愛的/.test(p) && !/^誠摯地/.test(p) && !/^20\d{2}/.test(p) && !/^Sally |^Melissa |^Anantha |^Roger /.test(p)) {
