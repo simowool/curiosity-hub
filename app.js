@@ -36,7 +36,7 @@ function saveKind() {
 function kindOf(e) { return e.kind || "site"; }
 function isThought(e) { const k = kindOf(e); return k === "thought" || k === "paper"; }
 function inKind(e) { return kind === "thought" ? isThought(e) : kindOf(e) === "site"; }
-function articleHref(e) { return "a/" + encodeURIComponent(e.id) + ".html"; }
+function articleHref(e) { return "article.html?id=" + encodeURIComponent(e.id); }
 function liveEntries(entries) {
   return (entries || []).filter((e) => (e.status || "recommended") !== "offline");
 }
@@ -188,7 +188,7 @@ function esc(s) {
     return String.fromCharCode(38, 35) + n + String.fromCharCode(59);
   });
 }
-fetch("data.json?v=20260921a")
+fetch("data.json?v=20260921b")
   .then(function (r) { if (!r.ok) throw new Error("data.json HTTP " + r.status); return r.json(); })
   .then(function (d) {
     DATA = d && typeof d === "object" ? d : { meta: {}, entries: [] };
