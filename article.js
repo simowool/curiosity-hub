@@ -11,7 +11,7 @@ function kindLabel(k) {
 }
 function linkify(escaped) {
   return escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function (full, label, href) {
-    if (!/^(https?:\/\/|\/|article\.html)/i.test(href)) return full;
+    if (!/^(https?:\/\/|\/|article\.html|a\/)/i.test(href)) return full;
     return '<a href="' + href + '">' + label + "</a>";
   });
 }
@@ -93,7 +93,7 @@ var pathMatch = (window.location.pathname || "").match(/\/a\/([^/]+)\.html$/);
 var inArticleDir = !!pathMatch;
 var id = (pathMatch && decodeURIComponent(pathMatch[1])) || params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-var dataFile = inArticleDir ? "../data.json?v=20260919a" : "data.json?v=20260919a";
+var dataFile = inArticleDir ? "../data.json?v=20260921c" : "data.json?v=20260921c";
 var homeHref = inArticleDir ? "../" : "./";
 if (box) {
 fetch(dataFile)
