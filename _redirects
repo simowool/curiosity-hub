@@ -1,0 +1,2 @@
+# Thought article pretty paths -> article.html
+/a/*.html  /article.html?id=:splat  301
