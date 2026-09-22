@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-09-21T20:12:05Z",
+    "updated": "2026-09-22T04:09:56Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -157,7 +157,7 @@
         "name": "ScratchJr",
         "url": "https://www.scratchjr.org/"
       },
-      "status": "offline",
+      "status": "recommended",
       "kind": "site"
     },
     {
