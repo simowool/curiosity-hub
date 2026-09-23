@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-09-22T04:09:56Z",
+    "updated": "2026-09-23T16:19:16Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -760,6 +760,37 @@
         "channel": "影音來源",
         "name": "Using AI to Increase Your Intelligence & Enrich Humanity | Dr. Fei-Fei Li · Huberman Lab",
         "url": "https://www.youtube.com/watch?v=N5AQFYtqx8Q"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-23-001",
+      "date": "2026-09-23",
+      "kind": "site",
+      "category": "語文",
+      "title": "媽爹講故事",
+      "summary": "Mom&Dad 創立的純淨聽故事 App：0 廣告、0 演算法、0 螢幕刺激、0 機器 AI 配音；金鐘入圍團隊真人錄製近千則免費故事，把專注力從藍光拉回聲音與想像。",
+      "basic_info": {
+        "年齡": "約0–12歲（學齡前安撫到國小文學／科普）",
+        "語言": "繁體中文",
+        "費用": "免費故事為主、零廣告",
+        "學科": "聽故事、情緒、經典文學、科普",
+        "平台": "App",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "有聲繪本",
+        "睡前故事",
+        "情緒教育",
+        "台灣"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "媽爹講故事",
+        "url": "https://www.momdadstory.com/"
       },
       "status": "recommended"
     }
