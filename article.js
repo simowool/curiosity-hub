@@ -15,9 +15,29 @@ function linkify(escaped) {
     return '<a href="' + href + '">' + label + "</a>";
   });
 }
+function tryTable(p) {
+  var lines = String(p).split(/\n/).map(function (l) { return l.trimEnd(); }).filter(function (l) { return l.trim(); });
+  if (lines.length < 2) return null;
+  if (!lines.every(function (l) { return l.indexOf("\t") !== -1; })) return null;
+  var rows = lines.map(function (l) { return l.split("\t").map(function (c) { return c.trim(); }); });
+  var cols = rows[0].length;
+  if (cols < 2 || !rows.every(function (r) { return r.length === cols; })) return null;
+  var html = '<div class="thought-table-wrap"><table class="thought-table"><thead><tr>';
+  rows[0].forEach(function (c) { html += "<th>" + linkify(esc(c)) + "</th>"; });
+  html += "</tr></thead><tbody>";
+  rows.slice(1).forEach(function (r) {
+    html += "<tr>";
+    r.forEach(function (c) { html += "<td>" + linkify(esc(c)) + "</td>"; });
+    html += "</tr>";
+  });
+  html += "</tbody></table></div>";
+  return html;
+}
 function paragraphs(text) {
   return String(text || "").split(/\n{2,}/).map(function (p) { return p.trim(); }).filter(Boolean)
     .map(function (p) {
+      var table = tryTable(p);
+      if (table) return table;
       var html = linkify(esc(p).replace(/\n/g, "<br>"));
       if (/^「[^」]+」$/.test(p.trim())) {
         return '<p class="thought-lead">' + html + "</p>";
@@ -28,10 +48,8 @@ function paragraphs(text) {
       if (/^[一二三四五六七八九十]+、/.test(p.trim()) || /^結語[：:]/.test(p.trim())) {
         return '<p class="thought-key"><strong>' + html + "</strong></p>";
       }
-      if (p.length <= 40 && !/[。！？]$/.test(p) && !/^親愛的/.test(p) && !/^誠摯地/.test(p) && !/^20\d{2}/.test(p) && !/^Sally |^Melissa |^Anantha |^Roger /.test(p)) {
-        if (/臨時委員會$|實務支持$|共享文化$|研究事業中的 AI$|一起做$|^AI 與教育/.test(p)) {
-          return '<p class="thought-key"><strong>' + html + "</strong></p>";
-        }
+      if (p.length <= 48 && !/[。！？]$/.test(p) && !/^親愛的/.test(p) && !/^誠摯地/.test(p) && !/^20\d{2}/.test(p) && !/^Sally |^Melissa |^Anantha |^Roger /.test(p) && p.indexOf("\n") === -1 && !/^\*/.test(p)) {
+        return '<p class="thought-key"><strong>' + html + "</strong></p>";
       }
       return "<p>" + html + "</p>";
     }).join("");
@@ -93,7 +111,7 @@ var pathMatch = (window.location.pathname || "").match(/\/a\/([^/]+)\.html$/);
 var inArticleDir = !!pathMatch;
 var id = (pathMatch && decodeURIComponent(pathMatch[1])) || params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-var dataFile = inArticleDir ? "../data.json?v=20260923b" : "data.json?v=20260923b";
+var dataFile = inArticleDir ? "../data.json?v=20260924a" : "data.json?v=20260924a";
 var homeHref = inArticleDir ? "../" : "./";
 if (box) {
 fetch(dataFile)
