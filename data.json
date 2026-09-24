@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-09-24T05:38:13Z",
+    "updated": "2026-09-24T15:40:13Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -812,6 +812,37 @@
         "channel": "訪談來源",
         "name": "羅博深 Po-Shen Loh／相關訪談",
         "url": "https://www.youtube.com/watch?v=JpYA7WXkHyI"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-24-001",
+      "date": "2026-09-24",
+      "kind": "site",
+      "category": "藝術",
+      "title": "Tate Kids",
+      "summary": "英國泰特美術館官方兒童站：把現代藝術變成小遊戲與創作工坊，免登入零廣告；可線上噴漆／像素畫，也能做家中廢材 DIY，作品可上兒童畫廊。",
+      "basic_info": {
+        "年齡": "約5–13歲（國小至國中）",
+        "語言": "英文",
+        "費用": "完全免費、零廣告、免登入",
+        "學科": "數位創作、美感啟蒙、手作 DIY",
+        "平台": "網站",
+        "年齡段": [
+          "小學",
+          "中學"
+        ]
+      },
+      "tags": [
+        "藝術",
+        "美感啟蒙",
+        "手作DIY",
+        "雙語"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Tate Kids",
+        "url": "https://www.tate.org.uk/kids"
       },
       "status": "recommended"
     }
