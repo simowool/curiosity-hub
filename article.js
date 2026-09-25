@@ -38,6 +38,13 @@ function paragraphs(text) {
     .map(function (p) {
       var table = tryTable(p);
       if (table) return table;
+      if (/^#{1,3}\s+/.test(p.trim())) {
+        var heading = p.trim().replace(/^#{1,3}\s+/, "");
+        return '<p class="thought-key"><strong>' + linkify(esc(heading).replace(/\n/g, "<br>")) + "</strong></p>";
+      }
+      if (/^---+$/.test(p.trim())) {
+        return '<hr class="thought-hr" />';
+      }
       var html = linkify(esc(p).replace(/\n/g, "<br>"));
       if (/^「[^」]+」$/.test(p.trim())) {
         return '<p class="thought-lead">' + html + "</p>";
@@ -111,7 +118,7 @@ var pathMatch = (window.location.pathname || "").match(/\/a\/([^/]+)\.html$/);
 var inArticleDir = !!pathMatch;
 var id = (pathMatch && decodeURIComponent(pathMatch[1])) || params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-var dataFile = inArticleDir ? "../data.json?v=20260924b" : "data.json?v=20260924b";
+var dataFile = inArticleDir ? "../data.json?v=20260925a" : "data.json?v=20260925a";
 var homeHref = inArticleDir ? "../" : "./";
 if (box) {
 fetch(dataFile)
