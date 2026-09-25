@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-09-24T15:40:13Z",
+    "updated": "2026-09-25T04:08:16Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -843,6 +843,69 @@
         "channel": "官方網站",
         "name": "Tate Kids",
         "url": "https://www.tate.org.uk/kids"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-24-002",
+      "date": "2026-09-24",
+      "kind": "site",
+      "category": "科學",
+      "title": "HHMI BioInteractive",
+      "summary": "霍華德·休斯醫學研究所打造的中學到大學生物教材庫：電影級 3D 動畫與真實科研數據，頂尖科學家親自參與；適合金高中、AP／IB 與科展探究。",
+      "basic_info": {
+        "年齡": "中學–大學（約13歲以上）",
+        "語言": "英文",
+        "費用": "免費、零廣告",
+        "學科": "分子與細胞生物、演化、生態、人體免疫、CRISPR",
+        "平台": "網站",
+        "年齡段": [
+          "中學",
+          "大學"
+        ]
+      },
+      "tags": [
+        "生物自學",
+        "STEM",
+        "科學探究",
+        "自主學習"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "HHMI BioInteractive",
+        "url": "https://www.biointeractive.org/"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "2026-09-24-003",
+      "date": "2026-09-24",
+      "kind": "site",
+      "category": "百科",
+      "title": "OpenStax",
+      "summary": "萊斯大學發起的非營利開源教科書平台：同行評審、永久免費、零廣告；涵蓋高中 AP／IB 到大學通識與專業先修，可線上讀或下載 PDF／Kindle。",
+      "basic_info": {
+        "年齡": "中學–大學（約15歲以上）",
+        "語言": "英文",
+        "費用": "永久免費、零廣告",
+        "學科": "AP／IB 理化生與微積分、大學經管心理社會史統計",
+        "平台": "網站／PDF／Kindle",
+        "年齡段": [
+          "中學",
+          "大學",
+          "成人"
+        ]
+      },
+      "tags": [
+        "大學自學",
+        "AP先修",
+        "開源教育",
+        "自主學習"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "OpenStax",
+        "url": "https://openstax.org/"
       },
       "status": "recommended"
     }
