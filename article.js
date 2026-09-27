@@ -118,7 +118,7 @@ var pathMatch = (window.location.pathname || "").match(/\/a\/([^/]+)\.html$/);
 var inArticleDir = !!pathMatch;
 var id = (pathMatch && decodeURIComponent(pathMatch[1])) || params.get("id") || (window.location.hash || "").replace(/^#/, "");
 var box = document.getElementById("reader");
-var dataFile = inArticleDir ? "../data.json?v=20260925a" : "data.json?v=20260925a";
+var dataFile = inArticleDir ? "../data.json?v=20260926a" : "data.json?v=20260926a";
 var homeHref = inArticleDir ? "../" : "./";
 if (box) {
 fetch(dataFile)
