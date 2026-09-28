@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-09-27T04:03:39Z",
+    "updated": "2026-09-28T04:06:14Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -529,7 +529,7 @@
         "name": "Cool English 酷英網",
         "url": "https://www.coolenglish.edu.tw/"
       },
-      "status": "offline",
+      "status": "recommended",
       "kind": "site"
     },
     {
