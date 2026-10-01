@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-10-01T09:52:32Z",
+    "updated": "2026-10-01T09:54:57Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -1007,8 +1007,8 @@
         "未來教育"
       ],
       "source": {
-        "channel": "Penguin Talks / YouTube",
-        "name": "The Future of Education — Yuval Noah Harari & Russell Brand",
+        "channel": "影音來源",
+        "name": "The Future of Education — Yuval Noah Harari & Russell Brand（Penguin Talks）",
         "url": "https://www.youtube.com/watch?v=j0uw7Xc0fLk"
       },
       "status": "recommended"
@@ -1028,9 +1028,9 @@
         "接納情緒"
       ],
       "source": {
-        "channel": "Marc Brackett",
-        "name": "Permission to Feel（允許表達的權利）",
-        "url": "https://marcbrackett.com/permission-to-feel/"
+        "channel": "影音來源",
+        "name": "Permission to Feel — Marc Brackett（Yale Center for Emotional Intelligence）",
+        "url": "https://www.youtube.com/watch?v=qs3ohqmKito"
       },
       "status": "recommended"
     }
