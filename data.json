@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-10-01T10:07:35Z",
+    "updated": "2026-10-02T04:04:31Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -991,6 +991,37 @@
         "url": "https://www.abcya.com/"
       },
       "status": "recommended"
+    },
+    {
+      "id": "2026-10-01-007",
+      "date": "2026-10-01",
+      "category": "科學",
+      "title": "NASA StarChild",
+      "summary": "NASA Goddard 給小天文家的分齡閱讀站：Level 1／Level 2 帶孩子認識太陽系、銀河與宇宙；英文為主、約 5–13 歲適用，也可當 STEM 英文延伸讀本。",
+      "basic_info": {
+        "年齡": "小學–國中（5–13歲）",
+        "語言": "英文（另有多語頁，可瀏覽器翻譯）",
+        "費用": "免費",
+        "學科": "天文、太陽系、宇宙",
+        "平台": "網站",
+        "年齡段": [
+          "小學",
+          "國中"
+        ]
+      },
+      "tags": [
+        "太空",
+        "NASA",
+        "STEM",
+        "雙語"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "NASA StarChild",
+        "url": "https://starchild.gsfc.nasa.gov/"
+      },
+      "status": "recommended",
+      "kind": "site"
     },
     {
       "id": "2026-10-01-001",
