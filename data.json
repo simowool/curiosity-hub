@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-10-02T04:04:31Z",
+    "updated": "2026-10-03T04:03:04Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -1019,6 +1019,37 @@
         "channel": "官方網站",
         "name": "NASA StarChild",
         "url": "https://starchild.gsfc.nasa.gov/"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-10-02-001",
+      "date": "2026-10-02",
+      "category": "語文",
+      "title": "Starfall",
+      "summary": "美國兒童英文啟蒙站：從字母發音、拼讀到閱讀小遊戲與故事，互動遊戲帶孩子玩著學；學前到國小低年級友善，也能當初學者的英文環境延伸。",
+      "basic_info": {
+        "年齡": "學齡前–小學（約3–10歲）",
+        "語言": "英文",
+        "費用": "學讀主線免費；完整年級與數學等可訂閱",
+        "學科": "英語字母、拼讀、閱讀；另有數學與藝術單元",
+        "平台": "網站／App",
+        "年齡段": [
+          "學齡前",
+          "小學"
+        ]
+      },
+      "tags": [
+        "雙語",
+        "幼兒啟蒙",
+        "閱讀",
+        "遊戲學習"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "Starfall",
+        "url": "https://www.starfall.com/"
       },
       "status": "recommended",
       "kind": "site"
