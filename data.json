@@ -2,7 +2,7 @@
   "meta": {
     "title": "好奇學學",
     "subtitle": "網站、想法與論文精選（持續更新）",
-    "updated": "2026-10-03T04:03:04Z",
+    "updated": "2026-10-04T04:02:35Z",
     "locale": "zh-Hant"
   },
   "entries": [
@@ -1050,6 +1050,37 @@
         "channel": "官方網站",
         "name": "Starfall",
         "url": "https://www.starfall.com/"
+      },
+      "status": "recommended",
+      "kind": "site"
+    },
+    {
+      "id": "2026-10-03-001",
+      "date": "2026-10-03",
+      "category": "科學",
+      "title": "LabXchange",
+      "summary": "哈佛大學與 Amgen 基金會打造的免費科學教室：虛擬實驗室可練微量移液、凝膠電泳、CRISPR 等流程，步驟出錯即時提示；還有影片、評量與可自訂學習路徑，適合高中 AP/IB、大學預習與自學。",
+      "basic_info": {
+        "年齡": "中學–大學（約14歲以上）",
+        "語言": "英文為主；部分內容多語",
+        "費用": "免費；瀏覽庫免帳號，儲存／班級需免費帳號",
+        "學科": "生物、化學、生命科學、實驗技術、AP 生物",
+        "平台": "網站",
+        "年齡段": [
+          "中學",
+          "大學"
+        ]
+      },
+      "tags": [
+        "STEM",
+        "科學探究",
+        "虛擬實驗室",
+        "自主學習"
+      ],
+      "source": {
+        "channel": "官方網站",
+        "name": "LabXchange",
+        "url": "https://www.labxchange.org/"
       },
       "status": "recommended",
       "kind": "site"
